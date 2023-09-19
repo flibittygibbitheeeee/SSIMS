@@ -14,6 +14,10 @@
     text-decoration: underline;
 }
 
+#reg-btn a{
+    color: #336b4f;
+}
+
 #reg-btn a:hover{
    background-color: #336b4f;
    color: white;
