@@ -26,7 +26,7 @@
                   <input type="email" name="email" placeholder="Email"  autocomplete="off" required/>
                 </div>
 
-                <div class="input-field" style="margin-bottom: 10px;">
+                <div class="input-field" style="margin-bottom: 20px;">
                     <i class="fa-solid fa-key"></i>                  
                     <input type="text" name="code" placeholder="Verification code" autocomplete="off" required/>
                 </div>
@@ -38,7 +38,7 @@
                 <input type="submit" name="login" value="Sign In" class="sign-btn" />
 
                 <div class="return">
-                  <a href="#"><i class="fa-solid fa-caret-left"></i> Go back</a>
+                  <a href="login.php"><i class="fa-solid fa-caret-left"></i> Go back</a>
                 </div>
               </div>
             </form>

@@ -117,7 +117,10 @@
 
                 <div class="input-field" style="margin-bottom: 50px;">
                   <i class="fas fa-lock"></i>
-                  <input type="password" name="password" minlength="6" placeholder="Password" autocomplete="off" required/>
+                  <input type="password" name="password" minlength="6" id="password-input" placeholder="Password" autocomplete="off" required/>
+                  <span id="toggle-password">
+                      <i id="toggle-icon" class="fa-regular fa-eye-slash"></i>
+                  </span>
                 </div>
 
                 <input type="submit" name="register" value="Sign Up" class="sign-btn" />
@@ -134,6 +137,24 @@
     </main>
 
     <!-- Javascript file -->
+
+    <script>
+        const passwordInput = document.getElementById('password-input');
+        const togglePassword = document.getElementById('toggle-password');
+        const toggleIcon = document.getElementById('toggle-icon');
+
+        togglePassword.addEventListener('click', function() {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            }
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>

@@ -107,7 +107,7 @@ form {
     height: 2.5rem;
     border-bottom: 1px solid #d2d2d2;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 75% 10%;
     padding: 0 0.4rem;
     position: relative;
 }
@@ -188,11 +188,11 @@ form {
 
 .gc input {
     color: white;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: 0.3s;
     background-color: #333;
-    padding: 5px 15px;
+    padding: 7px 15px;
     border-radius: 0.5rem;
     border: none;
 }
@@ -209,28 +209,6 @@ form {
 
 .text a:hover {
   color: #8371fd;
-}
-
-.eye {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-  
-.eye i {
-    display: block;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    font-size: 16px;
-    color: #777;
-}
-  
-.eye #hide, .eye #hideUp {
-    display: none;
 }
 
 @media (max-width: 1200px){
