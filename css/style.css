@@ -181,6 +181,22 @@ form {
     transition: 0.3s;
 }
 
+.gc{
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.gc input {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.3s;
+    background-color: #333;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    border: none;
+}
+
 .text {
   color: #bbb;
   font-size: 0.7rem;

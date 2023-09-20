@@ -27,8 +27,12 @@
                 </div>
 
                 <div class="input-field" style="margin-bottom: 10px;">
-                  <i class="fas fa-lock"></i>
-                  <input type="password" name="password" minlength="6" placeholder="Password" autocomplete="off" required/>
+                    <i class="fa-solid fa-key"></i>                  
+                    <input type="text" name="code" placeholder="Verification code" autocomplete="off" required/>
+                </div>
+
+                <div class="gc">
+                    <input type="submit" name="getcode" value="Get Code" class="gc-btn"/>
                 </div>
 
                 <input type="submit" name="login" value="Sign In" class="sign-btn" />

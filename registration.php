@@ -87,6 +87,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
     <title>TAU - SSIMS</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/mini.png"/>
   </head>
   <body>
