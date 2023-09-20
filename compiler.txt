@@ -1,0 +1,327 @@
+<?php
+?>
+
+<-------------------- LOGIN.PHP ------------------>
+
+<?php
+
+include 'db.php';
+session_start();
+
+if(isset($_POST['log'])){	
+	
+	$uname=$_POST['username'];
+    $password=$_POST['password'];
+    $sql="select * from Users where Username='".$uname."'AND Password='".$password."' limit 1";
+    $result = $mysqli->query($sql);
+    
+    if(mysqli_num_rows($result)==1){
+        header("location: home.php"); $_SESSION["Username"] = $_POST['username'];
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Basic Page Info -->
+		<meta charset="UTF-8" />
+		<title>TAU - SSIMS</title>
+
+		<!-- Site favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="imported/vendors/images/apple-touch-icon.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/mini.png"/>
+
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+		<!-- Google Font -->
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/> -->
+
+		<!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="imported/vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="imported/vendors/styles/icon-font.min.css"/>
+		<link rel="stylesheet" type="text/css" href="imported/vendors/styles/style.css" />
+	</head>
+	<body class="login-page">
+		<div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
+			<div class="container">
+                <div class="login-box border-radius-10">
+                    <div class="login-title">
+                        <h2 class="text-center">Sign in to continue</h2>
+                    </div>
+                    <form method = "Post">
+                        <div class="input-group custom">
+                            <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Username" name="username" required/>
+                            <div class="input-group-append custom">
+                                <span class="input-group-text">
+                                    <i class="icon-copy dw dw-user1"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="input-group custom">
+                            <input autocomplete="off" id="password-input" type="password" class="form-control form-control-lg" placeholder="Password" name="password" required/>
+                            <div class="input-group-append custom">
+                                <span id="toggle-password" class="input-group-text" style="cursor: pointer">
+                                    <i id="toggle-icon" class="icon-copy bi bi-eye-slash"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row pb-30">
+                            <div class="col">
+                                <div class="forgot-password">
+                                    <a href="forgotpassword.php" style="font-size: 14px;">Forgot Password?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="input-group mb-0">
+                                    <input name="log" type="submit" class="btn btn-lg btn-block" data-bgcolor="#336b4f" data-color="#ffffff">
+                                </div>
+                                <div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
+                                <div class="input-group mb-0" id="reg-btn">
+                                    <a class="btn btn-lg btn-block" style="border: 1px solid #336b4f;" href="registration.php">Register</a>
+                                </div>
+                                <div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373"></div>
+                                <div class="input-group mb-0" id="reg-btn">
+                                    <a class="btn btn-lg btn-block" style="border: 1px solid #336b4f;" href="index.php">Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+		<!-- js -->
+        <script>
+            const passwordInput = document.getElementById('password-input');
+            const togglePassword = document.getElementById('toggle-password');
+            const toggleIcon = document.getElementById('toggle-icon');
+
+            togglePassword.addEventListener('click', function() {
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    toggleIcon.classList.remove('bi-eye-slash');
+                    toggleIcon.classList.add('bi-eye');
+                } else {
+                    passwordInput.type = 'password';
+                    toggleIcon.classList.remove('bi-eye');
+                    toggleIcon.classList.add('bi-eye-slash');
+                }
+            });
+        </script>
+
+		<script src="imported/vendors/scripts/core.js"></script>
+		<script src="imported/vendors/scripts/script.min.js"></script>
+		<script src="imported/vendors/scripts/process.js"></script>
+		<script src="imported/vendors/scripts/layout-settings.js"></script>
+	</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form autocomplete="off" method="POST" class="sign-in-form">
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registered yet?</h6>
+                <a href="registration.php" class="toggle">Sign up</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-field">
+                  <i class="fa-regular fa-envelope"></i>                  
+                  <input type="email" name="email" placeholder="Email"  autocomplete="off" required/>
+                </div>
+
+                <div class="input-field" style="margin-bottom: 10px;">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" name="password" minlength="6" placeholder="Password" autocomplete="off" required/>
+                </div>
+
+                <div class="fp">
+                  <a href="#">Forgot Password?</a>
+                </div>
+
+                <input type="submit" name="login" value="Sign In" class="sign-btn" />
+
+                <div class="return">
+                  <a href="#"><i class="fa-solid fa-caret-left"></i> Go back</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
+
+<-------------------- FORGOT PASSWORD.PHP ------------------>
+
+<?php
+
+include 'db.php';
+session_start();
+require 'vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+
+$id = 0;
+$e= 'Email';
+$update = true;
+
+if(isset($_POST['getcode'])){	
+	
+	$email = $_POST['email'];
+	//$getcode = $_POST['getcode'];
+      
+    if($email==''){
+        $update = false;
+        $es= 'Enter email';
+    }  
+    elseif($email!=''){  
+        $name = 'TAU SSIMS';
+        $from = 'administrator@tau-ssims.online';	   
+        $code = rand(100000, 900000);  
+            
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->SMTPDebug = 2;
+        $mail->Host = 'smtp.hostinger.com';
+        $mail->Port = 587;
+        $mail->SMTPAuth = true;
+        $mail->Username = 'administrator@tau-ssims.online';
+        $mail->Password = 'Adminssims2023!';
+        $mail->setFrom('administrator@tau-ssims.online', 'TAU SSIMS');
+        $mail->addReplyTo($from, $name);
+        $mail->addAddress($email, 'User');
+        $mail->Subject = 'Reset Password';
+        $mail->msgHTML(file_get_contents('message.html'), __DIR__);
+        $mail->Body = 'Your activation code is: ' ."$code";
+        
+            if (!$mail->send()) {
+               echo 'Mailer Error: ' . $mail->ErrorInfo;
+            } 
+            else {   
+            	    header("location: forgotpassword.php"); 
+            }		
+    }		
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Basic Page Info -->
+		<meta charset="UTF-8" />
+		<title>TAU - SSIMS</title>
+
+		<!-- Site favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="imported/vendors/images/apple-touch-icon.png"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/mini.png"/>
+
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+		<!-- Google Font -->
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/> -->
+
+		<!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="imported/vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="imported/vendors/styles/icon-font.min.css"/>
+		<link rel="stylesheet" type="text/css" href="imported/vendors/styles/style.css" />
+	</head>
+	<body class="login-page">
+		<div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
+			<div class="container">
+                <div class="login-box border-radius-10">
+                    <div class="login-title">
+                        <h2 class="text-center">Reset Password</h2>
+                    </div>
+                    
+        <!-- Pop up message Email Required -->
+                    <?php if ($update == false): ?>
+                        <div class="login-title">
+                            <h2 class="text-center">Email Required</h2>
+                        </div>
+                    <?php endif; ?>
+                    
+                    <form method = "Post">
+                        <div class="input-group custom">
+                            <input autocomplete="off" type="text" class="form-control form-control-lg"  placeholder="<?php echo $e; ?>"name="email" required />
+                            <div class="input-group-append custom">
+                              <!--   <span class="input-group-text">
+                                    <i class="icon-copy dw dw-user1"></i>
+                                </span> -->
+                            </div>
+                        </div>
+                        <div class="input-group custom">
+                            <input autocomplete="off" type="text" class="form-control form-control-lg" placeholder="Verification Code" name="code" required/>
+                            <div class="input-group-append custom">
+                                <span class="input-group-text">
+                                   <button name="getcode" type="submit" class="btn btn-lg btn-block" data-bgcolor="#336b4f" data-color="#ffffff">Get Code</button>
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="input-group mb-0">
+                                    <input name="contact" type="submit" class="btn btn-lg btn-block" data-bgcolor="#336b4f" data-color="#ffffff">
+                                </div>
+                                <div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OR</div>
+                                <div class="input-group mb-0" id="reg-btn">
+                                    <a class="btn btn-lg btn-block" style="border: 1px solid #336b4f;" href="login.php">Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+			</div>
+		</div>
+		<!-- js -->
+        <script>
+            const passwordInput = document.getElementById('password-input');
+            const togglePassword = document.getElementById('toggle-password');
+            const toggleIcon = document.getElementById('toggle-icon');
+
+            togglePassword.addEventListener('click', function() {
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    toggleIcon.classList.remove('bi-eye-slash');
+                    toggleIcon.classList.add('bi-eye');
+                } else {
+                    passwordInput.type = 'password';
+                    toggleIcon.classList.remove('bi-eye');
+                    toggleIcon.classList.add('bi-eye-slash');
+                }
+            });
+        </script>
+
+		<script src="imported/vendors/scripts/core.js"></script>
+		<script src="imported/vendors/scripts/script.min.js"></script>
+		<script src="imported/vendors/scripts/process.js"></script>
+		<script src="imported/vendors/scripts/layout-settings.js"></script>
+	</body>
+</html>

@@ -1,32 +1,278 @@
-.login-wrap{
-    height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.login-page .login-box{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+body,
+input {
+  font-family: "Poppins", sans-serif;
 }
 
-.login-title h2{
-    color: #336b4f;
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #c6ecc6;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.forgot-password a:hover{
-    text-decoration: underline;
+.box {
+  width: 30%;
+  margin: 0 auto;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 3.3rem;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
 }
 
-#reg-btn a{
-    color: #336b4f;
+.forms-wrap {
+  height: 100%;
+  width: 100%;
 }
 
-#reg-btn a:hover{
-   background-color: #336b4f;
-   color: white;
+form {
+  padding: 40px;
 }
 
-@media only screen and (max-width: 425px){
-    .login-page .login-box{
+.logo {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.logo img {
+  width: auto;
+  height: 2.5rem;
+  margin-right: 0.3rem;
+  border-radius: 5px;
+}
+
+.logo h4 {
+  font-size: 1.1rem;
+  color: #151111;
+}
+
+.logo h4 span{
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    font-weight: light;
+}
+
+.heading{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.heading h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #151111;
+}
+
+.heading h6 {
+  color: #bababa;
+  font-weight: 400;
+  font-size: 0.75rem;
+  display: inline;
+}
+
+.actual-form{
+    margin-top: 50px;
+}
+
+.toggle {
+  color: #151111;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.toggle:hover {
+    color: rgb(7, 199, 7);
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: 2.5rem;
+    border-bottom: 1px solid #d2d2d2;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+  
+.input-field i {
+    text-align: center;
+    line-height: 3rem;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+.input-field input {
+    outline: none;
+    border: none;
+    background: none;
+    line-height: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+  
+.input-field input::placeholder {
+    color: #aaa;
+}
+
+.fp{
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.fp a {
+    color: #151111;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+  
+.fp a:hover {
+    color: rgb(117, 207, 117);
+}
+
+.sign-btn {
+  display: inline-block;
+  width: 100%;
+  height: 43px;
+  background-color: #336b4f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  transition: 0.3s;
+}
+
+.sign-btn:hover {
+  background-color: rgb(93, 143, 93);
+}
+
+.return{
+    width: 100%;
+    text-align: center;
+}
+
+.return a{
+    color: #151111;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.text {
+  color: #bbb;
+  font-size: 0.7rem;
+}
+
+.text a {
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.text a:hover {
+  color: #8371fd;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  
+.eye i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+}
+  
+.eye #hide, .eye #hideUp {
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .box{
+        width: 35%;
+    }
+}
+
+@media (max-width: 1100px){
+    .box{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1024px){
+    .box{
+        width: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+  .box {
+    height: auto;
+    max-width: 550px;
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 768px){
+    .box{
+        width: 85%;
+    }
+}
+
+@media (max-width: 530px) {
+
+    main {
+        padding: 1rem;
+        background: none;
+    }
+
+    .inner-box {
+        padding: 0;
+        width: 100%;
+    }
+
+    .box{
+        border-radius: 0;
         width: 100%;
         box-shadow: none;
-        border-radius: 0;
+    }
+
+    .heading h2{
+        font-size: 1.9rem;
+    }
+
+    form {
+        padding: 1rem 2rem 1.5rem;
     }
 }
