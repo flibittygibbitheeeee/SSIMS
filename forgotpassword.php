@@ -1,3 +1,54 @@
+<?php
+
+include 'db.php';
+session_start();
+require 'vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+
+$id = 0;
+$e= 'Email';
+$update = true;
+
+if(isset($_POST['getcode'])){	
+	
+	$email = $_POST['email'];
+	//$getcode = $_POST['getcode'];
+      
+    if($email==''){
+        $update = false;
+        $es= 'Enter email';
+    }  
+    elseif($email!=''){  
+        $name = 'TAU SSIMS';
+        $from = 'administrator@tau-ssims.online';	   
+        $code = rand(100000, 900000);  
+            
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->SMTPDebug = 2;
+        $mail->Host = 'smtp.hostinger.com';
+        $mail->Port = 587;
+        $mail->SMTPAuth = true;
+        $mail->Username = 'administrator@tau-ssims.online';
+        $mail->Password = 'Adminssims2023!';
+        $mail->setFrom('administrator@tau-ssims.online', 'TAU SSIMS');
+        $mail->addReplyTo($from, $name);
+        $mail->addAddress($email, 'User');
+        $mail->Subject = 'Reset Password';
+        $mail->msgHTML(file_get_contents('message.html'), __DIR__);
+        $mail->Body = 'Your activation code is: ' ."$code";
+        
+            if (!$mail->send()) {
+               echo 'Mailer Error: ' . $mail->ErrorInfo;
+            } 
+            else {   
+            	    header("location: forgotpassword.php"); 
+            }		
+    }		
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,15 +71,21 @@
                 <h2>Forgot Password</h2>
               </div>
 
+              <?php if ($update == false): ?>
+                    <div class="login-title">
+                        <h4 class="text-center">Email Required</h4>
+                    </div>
+                <?php endif; ?>
+
               <div class="actual-form">
                 <div class="input-field">
                   <i class="fa-regular fa-envelope"></i>                  
-                  <input type="email" name="email" placeholder="Email"  autocomplete="off" required/>
+                  <input type="email" name="email" placeholder="Email"  autocomplete="off" />
                 </div>
 
                 <div class="input-field" style="margin-bottom: 20px;">
                     <i class="fa-solid fa-key"></i>                  
-                    <input type="text" name="code" placeholder="Verification code" autocomplete="off" required/>
+                    <input type="text" name="code" placeholder="Verification code" autocomplete="off" />
                 </div>
 
                 <div class="gc">

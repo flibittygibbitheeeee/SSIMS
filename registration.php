@@ -1,82 +1,79 @@
 <?php
 
-// include 'db.php';
-// session_start();
-// require 'vendor/autoload.php';
-// use PHPMailer\PHPMailer\PHPMailer;
+include 'db.php';
+session_start();
+require 'vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
 
-// $id = 0;
+$id = 0;
 
-// if(isset($_POST['contact'])){	
+if(isset($_POST['contact'])){	
 	
 	
 	
-// 	$uname = $_POST['user'];
-// 	$pass = $_POST['password'];
-// 	$email = $_POST['email'];
-// 	$sno = $_POST['studentno'];
+	$uname = $_POST['user'];
+	$pass = $_POST['password'];
+	$email = $_POST['email'];
+	$sno = $_POST['studentno'];
 	
-// 	$sql="select * from Student where Email='".$email."'AND Student_No='".$sno."' limit 1";
-//     $result = $mysqli->query($sql);
+	$sql="select * from Student where Email='".$email."'AND Student_No='".$sno."' limit 1";
+    $result = $mysqli->query($sql);
     
-//     $sql2="select * from Student_List where Email='".$email."'AND Student_No='".$sno."' limit 1";
-//     $result2 = $mysqli->query($sql2);
+    $sql2="select * from Student_List where Email='".$email."'AND Student_No='".$sno."' limit 1";
+    $result2 = $mysqli->query($sql2);
 	
-// 	if(mysqli_num_rows($result2) == 1){
+	if(mysqli_num_rows($result2) == 1){
 	
-//         if(mysqli_num_rows($result) == 0){
+        if(mysqli_num_rows($result) == 0){
         
-//             $name = 'TAU SSIMS';
-//             $from = 'administrator@tau-ssims.online';	   
-//             $message = 'Greetings!';  
+            $name = 'TAU SSIMS';
+            $from = 'administrator@tau-ssims.online';	   
+            $message = 'Greetings!';  
                 
-//             $mail = new PHPMailer;
-//             $mail->isSMTP();
-//             $mail->SMTPDebug = 2;
-//             $mail->Host = 'smtp.hostinger.com';
-//             $mail->Port = 587;
-//             $mail->SMTPAuth = true;
-//             $mail->Username = 'administrator@tau-ssims.online';
-//             $mail->Password = 'Adminssims2023!';
-//             $mail->setFrom('administrator@tau-ssims.online', 'TAU SSIMS');
-//             $mail->addReplyTo($from, $name);
-//             $mail->addAddress($email, 'User');
-//             $mail->Subject = 'Account Creation Successful';
-//             $mail->msgHTML(file_get_contents('message.html'), __DIR__);
-//             $mail->Body = 'Message: ' ."$message";
+            $mail = new PHPMailer;
+            $mail->isSMTP();
+            $mail->SMTPDebug = 2;
+            $mail->Host = 'smtp.hostinger.com';
+            $mail->Port = 587;
+            $mail->SMTPAuth = true;
+            $mail->Username = 'administrator@tau-ssims.online';
+            $mail->Password = 'Adminssims2023!';
+            $mail->setFrom('administrator@tau-ssims.online', 'TAU SSIMS');
+            $mail->addReplyTo($from, $name);
+            $mail->addAddress($email, 'User');
+            $mail->Subject = 'Account Creation Successful';
+            $mail->msgHTML(file_get_contents('message.html'), __DIR__);
+            $mail->Body = 'Message: ' ."$message";
             
-//                 if (!$mail->send()) {
-//                    echo 'Mailer Error: ' . $mail->ErrorInfo;
-//                 } 
-//                 else {
-//                         $mysqli->query("INSERT INTO Users (Username, Password, Type) VALUES('$uname', '$pass', 'student')") or die($mysqli->error);
-//                         $mysqli->query("INSERT INTO Student (Student_No, First_Name, Middle_Name, Last_Name, Email, Phone_No) VALUES('$sno', ' ', ' ', ' ', '$email', ' ' )") or die($mysqli->error);
-//                 	    header("location: login.php");
-//                 }		
-//         }
+                if (!$mail->send()) {
+                   echo 'Mailer Error: ' . $mail->ErrorInfo;
+                } 
+                else {
+                        $mysqli->query("INSERT INTO Users (Username, Password, Type) VALUES('$uname', '$pass', 'student')") or die($mysqli->error);
+                        $mysqli->query("INSERT INTO Student (Student_No, First_Name, Middle_Name, Last_Name, Email, Phone_No) VALUES('$sno', ' ', ' ', ' ', '$email', ' ' )") or die($mysqli->error);
+                	    header("location: login.php");
+                }		
+        }
         
-//         elseif(mysqli_num_rows($result) == 1) {
+        elseif(mysqli_num_rows($result) == 1) {
             
-//             echo '<script type="text/javascript">';
-//     		echo ' alert("ACCOUNT ALREADY REGISTERED")';  
-//     		echo '</script>';
+            echo '<script type="text/javascript">';
+    		echo ' alert("ACCOUNT ALREADY REGISTERED")';  
+    		echo '</script>';
             
-//         }
-// 	}
+        }
+	}
 	
-// 	elseif(mysqli_num_rows($result2) != 1){
+	elseif(mysqli_num_rows($result2) != 1){
 	 
-// 	    echo '<script type="text/javascript">';
-// 		echo ' alert("INVALID ACCOUNT\nPLEASE CONTACT ADMINISTRATOR")';  
-// 		echo '</script>';
+	    echo '<script type="text/javascript">';
+		echo ' alert("INVALID ACCOUNT\nPLEASE CONTACT ADMINISTRATOR")';  
+		echo '</script>';
 	    
-// 	}
+	}
 			
-// }
+}
 
-?>
-
-<?php
 ?>
 
 <!DOCTYPE html>

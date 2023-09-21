@@ -1,3 +1,22 @@
+<?php
+
+include 'db.php';
+session_start();
+
+if(isset($_POST['log'])){	
+	
+	$uname=$_POST['username'];
+    $password=$_POST['password'];
+    $sql="select * from Users where Username='".$uname."'AND Password='".$password."' limit 1";
+    $result = $mysqli->query($sql);
+    
+    if(mysqli_num_rows($result)==1){
+        header("location: home.php"); $_SESSION["Username"] = $_POST['username'];
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,9 +24,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/mini.png"/>
     <title>TAU - SSIMS</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/mini.png"/>
   </head>
   <body>
     <main>
@@ -43,7 +62,7 @@
                 <input type="submit" name="login" value="Sign In" class="sign-btn" />
 
                 <div class="return">
-                  <a href="#"><i class="fa-solid fa-caret-left"></i> Go back</a>
+                  <a href="index.php"><i class="fa-solid fa-caret-left"></i> Go back</a>
                 </div>
               </div>
             </form>
