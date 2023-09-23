@@ -18,11 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-image: url('../assets/green-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  color: #151111;
 }
 
 body::-webkit-scrollbar {
@@ -73,19 +69,17 @@ header .container-fluid{
 
 header .navb-logo{
   display: flex;
-  text-shadow: 1px 1px 2px;
   align-items: center;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-header .navb-logo h2{
-  margin-top: 1rem;
-  font-weight: 800;
+header .navb-logo h3{
+  margin: 0 auto;
+  font-weight: 600;
   position: relative;
-  color: whitesmoke;
-  font-size: 18px;
-  letter-spacing: 0.1em;
+  color: #333;
+  text-shadow: 1px 1px 2px black;
 }
 
 header .navb-logo img{
@@ -117,7 +111,7 @@ header .item{
   font-size: 15px;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  color: whitesmoke;
+  color: #333;
   transition: all 0.3s ease-in-out;    
   cursor: pointer;
   position: relative;
@@ -167,13 +161,13 @@ header #dropdown ul li:hover{
 } 
 
 header .item a:hover{
-  color: cyan;
+  color: #39ff14;
 }
 
 header .item a:after{
   content: "";
   position: absolute;
-  background: cyan;
+  background: #39ff14;
   height: 3px;
   width: 0;
   transition: 0.3s; 
@@ -187,7 +181,8 @@ header .item a:hover:after{
 
 header .mobile-toggler{
   font-size: 20px;
-  color: #0ef;
+  color: #333;
+  text-shadow: 1px 1px 2px black;
   display: none;
 }
 
@@ -200,7 +195,7 @@ header .mobile-toggler{
 
 .modal-content{
   border-radius: 0;
-  height: 110vh;
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -210,12 +205,6 @@ header .mobile-toggler{
   height: 70px;
   margin: 0 auto;
   border-bottom: none;
-}
-
-.modal-header img{
-  width: 6rem;
-  height: 6rem;
-  margin-top: 17.5px;
 }
 
 .modal-header .btn-close{
@@ -229,7 +218,8 @@ header .mobile-toggler{
 
 .modal-header .btn-close span{
   font-size: 30px;
-  color: whitesmoke;
+  color: #333;
+  text-shadow: 1px 1px 2px black;
 }
 
 .modal-header .btn-close:active{
@@ -244,23 +234,21 @@ header .mobile-toggler{
 }
 
 .modal-middle img{
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
 }
 
-.modal-middle h2{
+.modal-middle h3{
   margin-top: 10px;
-text-align: center;
-font-size: 16px;
-font-weight: 800;
-position: relative;
-color: whitesmoke;
-letter-spacing: 0.1em;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  color: #333;
+  text-shadow: 1px 1px 2px black;
 }
 
 .modal-body {
   text-align: center;
-  font-size: 16px;
   height: 3rem;
   font-weight: 600;
   transition: all 0.5s ease-in-out;    
@@ -270,23 +258,24 @@ letter-spacing: 0.1em;
 }
 
 .modal-body ul{
-color: whitesmoke;
-padding: 0;
+  color: #333;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .modal-body ul li a:hover{
-  color: #333;
-  background: #fff;
+  color: #336b4f;
+  background: #C1E1C1;
 }
 
 .modal-body ul li a{
   font-weight: 700;
   display: flex;
-  line-height: 3rem;
+  line-height: 3.3rem;
   align-items: center;
   width: auto;
   justify-items: center;
-  color: whitesmoke;
+  color: #333;
   padding-left: 2rem;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
@@ -298,74 +287,6 @@ padding: 0;
 
 .modal-body .name{
   margin-left: 0.5rem;
-}
-
-.modal-body ul li a span#arrow{
-  position: absolute;
-  right: 0;
-  top: 10px;
-  transition: 0.5s;
-}
-
-.modal-body .dropdown{
-  position: relative;
-}
-
-.modal-body .dropdown-content{
-  display: none;
-  position: absolute;
-  padding-top: 1rem;
-  width: 90%;
-  border-radius: 10px;
-  left: 10px;
-  z-index: 1;
-  background: #dafcda;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.modal-body .dropdown-content a {
-  color: var(--color-primary);
-  display: block;
-}
-
-.modal-body .dropdown-content li{
-  height: 3rem;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-  padding: 0.5rem;
-  border-radius: 20px;
-}
-
-.modal-body .dropdown-content a:hover{
-  background: var(--color-background);
-}
-
-.modal-body .dropdown:hover .dropdown-content{
-  display: block;
-}
-
-.modal-body .dropdown-content li:hover{
-  color: #fff;
-  background: #333;
-  text-shadow: none;
-} 
-
-.modal-body ul li>ul{
-  padding: 1px;
-  margin: 0 0 0 20px;
-}
-
-.modal-body ul li li:hover{
-  display: block;
-}
-
-.modal-body .dropdown li:hover a span#arrow{
-  transform: rotate(90deg);
-  top: 10px;
 }
 
 .home{

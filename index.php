@@ -30,7 +30,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">    
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/mini.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
     <title>TAU - SSIMS</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
@@ -41,7 +41,7 @@
             <div class="container-fluid">
                 <div class="navb-logo">
                     <img src="assets/mini.png" alt="hi">
-                    <h2>TAU - SSIMS</h2>
+                    <h3>TAU - SSIMS</h3>
                 </div>
     
                 <div class="navb-items">
@@ -82,8 +82,9 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
                             </div>
                             <div class="modal-middle">
-                                <img src="assets/mini.png" alt="hi">
-                                <h2>TAU - SSIMS</h2>
+                                <img src="assets/TAU lOGO.png" alt="hi">
+                                <h3>TAU - SSIMS</h3>
+                            </div>
                             <div class="modal-body">
                                 <ul>
                                     <li id="dashboard">
@@ -104,7 +105,7 @@
                                 <ul>
                                     <li id="dashboard">
                                         <a href="#">
-                                            <span class="material-icons-outlined" id="icon">question_answer</span>
+                                            <span class="material-icons-outlined" id="icon">contact_support</span>
                                             <span class="name">CONTACT US</span>
                                         </a>
                                     </li>
@@ -112,7 +113,7 @@
                                 <ul>
                                     <li id="dashboard">
                                         <a href="#">
-                                            <span class="material-icons-outlined" id="icon">laptop</span>
+                                            <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
                                         </a>
                                     </li>
@@ -120,15 +121,15 @@
                                 <ul>
                                     <li id="dashboard">
                                         <a href="#">
-                                            <span class="material-icons-outlined" id="icon">question_answer</span>
+                                            <span class="material-icons-outlined" id="icon">music_note</span>
                                             <span class="name">SOCIOCULTURAL</span>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li id="dashboard">
-                                        <a href="#">
-                                            <span class="material-icons-outlined" id="icon">question_answer</span>
+                                        <a href="login.php">
+                                            <span class="material-icons-outlined" id="icon">login</span>
                                             <span class="name">LOGIN</span>
                                         </a>
                                     </li>
