@@ -1,38 +1,17 @@
-<!-- <!DOCTYPE html> 
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/mini.png"/>
-    <title>TAU - SSIMS</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="in-head">
-                <a href="#">About Us</a>
-                <a href="#">Sports</a>
-                <a href="#">Sociocultural</a>
-                <a href="login.php">Login</a>
-            </div>
-        </div>
-    </div>
-</body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">    
+    <title>TAU - SSIMS</title>    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">    
     <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
-    <title>TAU - SSIMS</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="imported/vendors/styles/core.css" />
+    <link rel="stylesheet" type="text/css" href="imported/vendors/styles/icon-font.min.css"/>
+    <link rel="stylesheet" type="text/css" href="imported/vendors/styles/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -141,9 +120,68 @@
             </div>
         </header>
         
-        <section class="home">
-
+        <section class="home">  
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="imported/vendors/images/img1.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color-white">First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="imported/vendors/images/img3.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color-white">Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color-white">Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                                        <div class="carousel-item">
+                        <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Fourth slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color-white">Fourth slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                                        <div class="carousel-item">
+                        <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Fifth slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="color-white">Fifth slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>						
         </section>
+
+        <!-- js -->
+    <script src="imported/vendors/scripts/core.js"></script>
+    <script src="imported/vendors/scripts/script.min.js"></script>
+    <script src="imported/vendors/scripts/process.js"></script>
+    <script src="imported/vendors/scripts/layout-settings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
