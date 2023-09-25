@@ -1,0 +1,440 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  appearance: none;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+:root {
+    --color-primary: #eb445a;
+  
+    --color-dark: #222428;
+    --color-dark-rgb: 34, 36, 40;
+    --color-dark-contrast: whitesmoke;
+    --color-dark-contrast-rgb: 255, 255, 255;
+    --color-dark-shade: #1e2023;
+    --color-dark-tint: #5e6066;
+    --color-background:  #f1f7f1;
+    --color-white: #ffffff;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+  
+    --card-padding: 1.8 rem;
+    --padding-1: 1.2rem;
+  
+    --box-shadows: 0 2rem 3rem var(var(--color-dark-tint));
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  
+  h2{
+    font-size: 1.4rem;
+  }
+  
+  h3{
+    font-size: 0.87rem;
+  }
+  
+  h4{
+    font-size: 0.8rem;
+  }
+  
+  h5{
+    font-size: 0.77rem;
+  }
+  
+  .primary{
+    color: var(--color-primary);
+  } */
+/* 
+body{
+    overflow-x: hidden;
+    background-image: url('../../assets/creambg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    color: var(--color-dark);
+    height: 100vh;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover{
+    color: currentColor;
+} */
+
+header{
+    width: 100vw;
+    height: 80px;
+    background: #eae6e1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header .container-fluid{
+    width: 100%;
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navb-logo{
+    width: 200px;
+    display: flex;
+    text-shadow: 1px 1px 2px black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navb-logo h2{
+    font-weight: 800;
+    margin-top: 1rem;
+    position: relative;
+    color: #333;
+    text-shadow: 1px 1px 2px white;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+header .navb-logo img{
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+header .navb-items{
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .main-nav{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 900px;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .item{
+    text-align: center;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;    
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+header .item ul li{
+    text-shadow: none;
+    color: #333;    
+    transition: 0.5s ease;    
+    line-height: 3rem;
+    list-style: none;
+    border-radius: 20px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header .item ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: redd;
+}
+
+header .item:hover{
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+header .mobile-toggler{
+    font-size: 20px;
+}
+
+/* modal */
+
+.modal-dialog{
+    margin: 0;
+    width: 400px;
+}
+
+.modal-content{
+    border-radius: 0;
+    height: 120vh;
+    overflow-y: scroll;
+    background-image: url('../../assets/creambg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 15px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+.modal-header{
+    align-items: center;
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    border-bottom: none;
+}
+
+.modal-header img{
+    width: 6rem;
+    height: 6rem;
+    margin-top: 17.5px;
+    border-radius: 50%;
+}
+
+.modal-header .btn-close{
+    background: transparent;
+    padding: 0.5rem;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header .btn-close span{
+    font-size: 30px;
+    color: #eb445a;
+}
+
+.modal-header .btn-close:active{
+    background: #ccf3cc;
+}
+
+.modal-middle{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-middle img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.modal-middle h2{
+    margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  position: relative;
+  color: #eb445a;
+  letter-spacing: 0.1em;
+}
+
+.modal-body{
+    width: 88%;
+    margin: 0 auto;
+}
+
+.modal-body {
+    text-align: center;
+    font-size: 16px;
+    height: 3rem;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;    
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.modal-body .main-nav{
+    display: block;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.modal-body .item{
+    text-align: left;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;    
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-shadow: none;
+    margin: 0 auto;
+    display: flex;
+    color: #333;    
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;   
+}
+
+.modal-body .item a h3{
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.modal-body .item a{
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 2rem;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.modal-body .item a span{
+    font-size: 1.6rem;
+}
+
+.modal-body .title{
+    margin-top: 0.5rem;
+    font-weight: 800;
+}
+
+.modal-body .item:hover{
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+}
+
+/* MAIN SECTION */
+
+.wrapper{
+    height: max-content;
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        padding-right: 1rem;
+    }
+
+    header .container-fluid{
+        padding: 0 5%;
+    }
+
+    header .mobile-toggler{
+        display: block;
+    }
+}
+
+@media(max-width:992px){
+    
+    
+}
+
+@media screen and (max-width: 780px) {
+    .wrapper{
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width:760px){
+
+    .wrapper{
+        background-color: red;
+    }
+
+    header{
+        position: relative;
+    }
+
+    header .navb-logo h2{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .wrapper{
+        background-color: silver;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+
+    .wrapper{
+        background-color: orange;
+    }
+
+    .modal-dialog{
+        width: 82%;
+    }
+
+    .modal-body{
+        padding-left: 0;
+    }
+
+    .modal-body .modal-line{
+        height: 3.5rem;
+    }
+}
