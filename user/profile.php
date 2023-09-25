@@ -27,6 +27,8 @@
 				<div class="menu-icon bi bi-list"></div>
 			</div>
 		</div>
+		<!-- <img src="../../../public/imported/vendors/images/logo-icon.png" /> -->
+
 		<div class="left-side-bar sidebar-light">
 			<div class="profile">
                 <div class="prof-top">
