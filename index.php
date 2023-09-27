@@ -1,23 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">    
-    <title>TAU - SSIMS</title>    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="imported/vendors/styles/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>TAU - SSIMS</title>    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
+    <div class="container">
         <header>
             <div class="container-fluid">
                 <div class="navb-logo">
-                    <img src="assets/mini.png" alt="hi">
-                    <h3>TAU - SSIMS</h3>
+                    <img src="assets/TAU logo.png" alt="hi">
+                    <h2>TAU-SSIMS</h2>
                 </div>
     
                 <div class="navb-items">
@@ -30,14 +30,14 @@
                         </li>
                         <li class="item">
                             <a href="#">CONTACT US</a>
-                        </li>
+                       </li>
                         <li class="item">
                             <a href="#">SPORTS</a>
-                       </li>
+                        </li>
                         <li class="item">
                             <a href="#">SOCIOCULTURAL</a>
                         </li>
-                        <li class="item">
+                        <li class="item" id="loginItem">
                             <a href="login.php">LOGIN</a>
                         </li>
                     </ul>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="modal-middle">
                                 <img src="assets/TAU logo.png" alt="hi">
-                                <h3>TAU - SSIMS</h3>
+                                <h2>TAU-SSIMS</h2>
                             </div>
                             <div class="modal-body">
                                 <ul>
@@ -117,7 +117,7 @@
             </div>
         </header>
         
-        <section class="home">  
+        <section class="home">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -135,28 +135,28 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="imported/vendors/images/img3.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="color-white">Second slide label</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="imported/vendors/images/img3.jpg" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="color-white">Third slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Fourth slide">
+                        <img class="d-block w-100" src="imported/vendors/images/img4.jpg" alt="Fourth slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="color-white">Fourth slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Fifth slide">
+                        <img class="d-block w-100" src="imported/vendors/images/img5.jpg" alt="Fifth slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="color-white">Fifth slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -171,14 +171,97 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>					
+            </div>						
         </section>
-    </div>
-        <!-- js -->
+
+        <section class="articles">
+            <div class="row clearfix">
+                <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
+                    <div class="card card-box">
+                        <img class="card-img-top" src="imported/vendors/images/img4.jpg" alt="Card image cap"/>
+                        <div class="card-body">
+                            <h5 class="card-title weight-500">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
+                    <div class="card bg-dark card-box">
+                        <img class="card-img" src="imported/vendors/images/img1.jpg" alt="Card image"/>
+                        <div class="card-img-overlay">
+                            <h5 class="card-title weight-500">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural
+                                lead-in.
+                            </p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h5 class="card-title weight-500">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                        <img class="card-img-bottom" src="imported/vendors/images/img5.jpg" alt="Card image cap"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <footer>
+            <div class="one child">
+                <img src="assets/code.gif" alt="hi">
+                <h2>Let's Code!</h2>
+                <h3>Pugak Pugak</h3>
+            </div>
+            <div class="two child">
+                <h2>SECTION 2</h2>
+                <h3>Kim Namjoon</h3>
+                <h3>Kim Seokjin</h3>
+                <h3>Min Yoongi</h3>
+                <h3>Jung Hoseok</h3>
+                <h3>Park Jimin</h3>
+                <h3>Kim Taehyung</h3>
+                <h3>Jeon Jungkook</h3>
+            </div>
+            <div class="three child">
+                <h2>SECTION 3</h2>
+                <h3>Kim Namjoon</h3>
+                <h3>Kim Seokjin</h3>
+                <h3>Min Yoongi</h3>
+                <h3>Jung Hoseok</h3>
+                <h3>Park Jimin</h3>
+                <h3>Kim Taehyung</h3>
+                <h3>Jeon Jungkook</h3>            
+            </div>
+            <div class="four child">
+                <h2>SECTION 4</h2>
+                <h3>Kim Namjoon</h3>
+                <h3>Kim Seokjin</h3>
+                <h3>Min Yoongi</h3>
+                <h3>Jung Hoseok</h3>
+                <h3>Park Jimin</h3>
+                <h3>Kim Taehyung</h3>
+                <h3>Jeon Jungkook</h3>
+            </div>
+        </footer> -->
     <script src="imported/vendors/scripts/core.js"></script>
-    <script src="imported/vendors/scripts/script.min.js"></script>
-    <script src="imported/vendors/scripts/process.js"></script>
-    <script src="imported/vendors/scripts/layout-settings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
