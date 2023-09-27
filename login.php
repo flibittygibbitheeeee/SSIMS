@@ -1,19 +1,19 @@
 <?php
 
-include 'db.php';
-session_start();
+// include 'db.php';
+// session_start();
 
-if(isset($_POST['log'])){	
+// if(isset($_POST['log'])){	
 	
-	$uname=$_POST['username'];
-    $password=$_POST['password'];
-    $sql="select * from Users where Username='".$uname."'AND Password='".$password."' limit 1";
-    $result = $mysqli->query($sql);
+// 	$uname=$_POST['username'];
+//     $password=$_POST['password'];
+//     $sql="select * from Users where Username='".$uname."'AND Password='".$password."' limit 1";
+//     $result = $mysqli->query($sql);
     
-    if(mysqli_num_rows($result)==1){
-        header("location: home.php"); $_SESSION["Username"] = $_POST['username'];
-    }
-}
+//     if(mysqli_num_rows($result)==1){
+//         header("location: home.php"); $_SESSION["Username"] = $_POST['username'];
+//     }
+// }
 
 ?>
 

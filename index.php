@@ -15,110 +15,29 @@
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="container-fluid">
-                <div class="navb-logo">
-                    <img src="assets/mini.png" alt="hi">
-                    <h3>TAU - SSIMS</h3>
-                </div>
-    
-                <div class="navb-items">
-                    <ul class="main-nav">
-                        <li class="item">
-                            <a href="index.php">HOME</a>
-                        </li>
-                        <li class="item">
-                            <a href="#">ABOUT US</a>
-                        </li>
-                        <li class="item">
-                            <a href="#">CONTACT US</a>
-                        </li>
-                        <li class="item">
-                            <a href="#">SPORTS</a>
-                       </li>
-                        <li class="item">
-                            <a href="#">SOCIOCULTURAL</a>
-                        </li>
-                        <li class="item">
-                            <a href="login.php">LOGIN</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- Button trigger modal -->
-                <div class="mobile-toggler">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
-                        <i class="fa-solid fa-bars-staggered"></i>                
-                    </a>
-                </div>
-    
-                <!-- Modal -->
-                <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
-                            </div>
-                            <div class="modal-middle">
-                                <img src="assets/TAU lOGO.png" alt="hi">
-                                <h3>TAU - SSIMS</h3>
-                            </div>
-                            <div class="modal-body">
-                                <ul>
-                                    <li id="dashboard">
-                                        <a href="index.php">
-                                            <span class="material-icons-outlined" id="icon">home</span>
-                                            <span class="name">HOME</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li id="dashboard">
-                                        <a href="#">
-                                            <span class="material-icons-outlined" id="icon">people</span>
-                                            <span class="name">ABOUT US</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li id="dashboard">
-                                        <a href="#">
-                                            <span class="material-icons-outlined" id="icon">contact_support</span>
-                                            <span class="name">CONTACT US</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li id="dashboard">
-                                        <a href="#">
-                                            <span class="material-icons-outlined" id="icon">sports_tennis</span>
-                                            <span class="name">SPORTS</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li id="dashboard">
-                                        <a href="#">
-                                            <span class="material-icons-outlined" id="icon">music_note</span>
-                                            <span class="name">SOCIOCULTURAL</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li id="dashboard">
-                                        <a href="login.php">
-                                            <span class="material-icons-outlined" id="icon">login</span>
-                                            <span class="name">LOGIN</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="wrapper">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between" style="padding: 10px 20px;">
+            <div class="navb-logo">
+                <img src="assets/mini.png" alt="hi">
+                <h3>TAU - SSIMS</h3>
             </div>
-        </header>
+            <button class="mobile-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>                
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         
         <section class="home">  
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -176,7 +95,7 @@
                 </a>
             </div>						
         </section>
-
+    </div>
         <!-- js -->
     <script src="imported/vendors/scripts/core.js"></script>
     <script src="imported/vendors/scripts/script.min.js"></script>
