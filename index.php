@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="imported/vendors/styles/core.css" />
-    <link rel="stylesheet" type="text/css" href="imported/vendors/styles/icon-font.min.css"/>
-    <link rel="stylesheet" type="text/css" href="imported/vendors/styles/style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div>
         <header>
             <div class="container-fluid">
                 <div class="navb-logo">
@@ -61,12 +58,12 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
                             </div>
                             <div class="modal-middle">
-                                <img src="assets/TAU lOGO.png" alt="hi">
+                                <img src="assets/TAU logo.png" alt="hi">
                                 <h3>TAU - SSIMS</h3>
                             </div>
                             <div class="modal-body">
                                 <ul>
-                                    <li id="dashboard">
+                                    <li>
                                         <a href="index.php">
                                             <span class="material-icons-outlined" id="icon">home</span>
                                             <span class="name">HOME</span>
@@ -74,7 +71,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li id="dashboard">
+                                    <li>
                                         <a href="#">
                                             <span class="material-icons-outlined" id="icon">people</span>
                                             <span class="name">ABOUT US</span>
@@ -82,7 +79,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li id="dashboard">
+                                    <li>
                                         <a href="#">
                                             <span class="material-icons-outlined" id="icon">contact_support</span>
                                             <span class="name">CONTACT US</span>
@@ -90,7 +87,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li id="dashboard">
+                                    <li>
                                         <a href="#">
                                             <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
@@ -98,7 +95,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li id="dashboard">
+                                    <li>
                                         <a href="#">
                                             <span class="material-icons-outlined" id="icon">music_note</span>
                                             <span class="name">SOCIOCULTURAL</span>
@@ -106,7 +103,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li id="dashboard">
+                                    <li>
                                         <a href="login.php">
                                             <span class="material-icons-outlined" id="icon">login</span>
                                             <span class="name">LOGIN</span>
@@ -151,14 +148,14 @@
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </div>
                     </div>
-                                        <div class="carousel-item">
+                    <div class="carousel-item">
                         <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Fourth slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="color-white">Fourth slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </div>
                     </div>
-                                        <div class="carousel-item">
+                    <div class="carousel-item">
                         <img class="d-block w-100" src="imported/vendors/images/img2.jpg" alt="Fifth slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="color-white">Fifth slide label</h5>
@@ -174,9 +171,9 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>						
+            </div>					
         </section>
-
+    </div>
         <!-- js -->
     <script src="imported/vendors/scripts/core.js"></script>
     <script src="imported/vendors/scripts/script.min.js"></script>

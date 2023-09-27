@@ -1,3 +1,61 @@
+
+.modal-middle img{
+  width: 6rem;
+  height: 6rem;
+}
+
+.modal-middle h3{
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  color: #333;
+  text-shadow: 1px 1px 2px black;
+}
+
+.modal-body {
+  text-align: center;
+  height: 3rem;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;    
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.modal-body ul{
+  color: #333;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.modal-body ul li a:hover{
+  color: #336b4f;
+  background: #C1E1C1;
+}
+
+.modal-body ul li a{
+  font-weight: 700;
+  display: flex;
+  line-height: 3.3rem;
+  align-items: center;
+  width: auto;
+  justify-items: center;
+  color: #333;
+  padding-left: 2rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-body #icon{
+  font-size: 2rem;
+}
+
+.modal-body .name{
+  margin-left: 0.5rem;
+}
+
+
 <?php
 ?>
 

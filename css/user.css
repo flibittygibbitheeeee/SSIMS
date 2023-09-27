@@ -94,6 +94,7 @@ body {
     width: 200px;
 }
 
+
 @media (max-width: 1300px){
     .logo{
         justify-content: center;
