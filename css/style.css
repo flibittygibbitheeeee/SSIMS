@@ -509,7 +509,6 @@ form {
 }
 
 .home{
-    margin-top: 20px;
     height: 100%;
     width: 100vw;
     display: flex;
@@ -518,13 +517,13 @@ form {
 }
 
 .home .carousel img{
-    height: 400px;
+    height: 88vh;
     width: 100%;
     margin: 0 auto;
 }
 
 .home .carousel{
-  height: 400px;
+  height: 88vh;
   width: 850px;
 }
 
