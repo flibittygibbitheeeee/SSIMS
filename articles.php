@@ -117,6 +117,16 @@
             </div>
         </header>
 
+        <section class="fullArt">
+            <h1>TAU to host the National SCUAA 2023</h1>
+            <div class="datePublished">
+                <p>September 28, 2023</p>
+            </div>
+            <div class="author">
+                <p>Tarlac Agricultural University - The Golden Harvest</p>
+            </div>
+        </section>
+
     <script src="imported/vendors/scripts/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
