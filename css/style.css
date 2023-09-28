@@ -41,6 +41,11 @@
 body{
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-image: url('../assets/gray-bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
     color: #333;
 }
 
@@ -147,30 +152,23 @@ header .main-nav{
 
 header .item{
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
   transition: 0.3s ease;
-  line-height: 3rem;
-  border-radius: 20px;
+  border-radius: 15px;
   width: max-content;
   margin-left: 10px;
-}
-
-header #loginItem{
-  background-color: #031E23;
-  color: white;
+  padding: 5px 20px;
 }
 
 header .item a{
-  text-transform: uppercase;
   width: 100%;
-  padding: 0 20px;
 }
 
 header .item:hover, header #loginItem:hover{
-  background-color: #024e02;
+  background-color: #031E23;
   color: white;
 }
 
@@ -509,22 +507,24 @@ form {
 }
 
 .home{
-    height: 100%;
+    height: auto;
     width: 100vw;
+    padding: 10px 0;
     display: flex;
     align-items: center;
+    background-color: white;
     justify-content: center;
 }
 
 .home .carousel img{
-    height: 88vh;
+    height: 70vh;
     width: 100%;
     margin: 0 auto;
 }
 
 .home .carousel{
-  height: 88vh;
-  width: 850px;
+  height: auto;
+  width: 700px;
 }
 
 .carousel-caption{
@@ -539,12 +539,47 @@ form {
 }
 
 .articles{
-  margin-top: 20px;
   height: 100%;
   width: 100vw;
+  padding: 40px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+}
+
+.articles .card-box {
+  transition: .3s ease-in-out;
+}
+
+.articles .card-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.articles .card-box a:hover{
+  color: #333;
+}
+
+.blink{
+  position: relative;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
+      color: #333;
+      text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%{
+      color: #fff;
+      text-shadow: 0 0 10px #024e02,
+      0 0 20px #024e02,
+      0 0 40px #024e02,
+      0 0 80px #024e02,
+      0 0 160px #024e02,
+      0 0 400px #024e02;
+  }
 }
 
 @media (max-width: 1200px){
@@ -580,10 +615,6 @@ form {
       overflow-x: hidden;
   }
 
-  header{
-    height: 15vh;
-  }
-  
   .navb-items{
       display: none;
   }
@@ -687,6 +718,12 @@ form {
       margin: 0 auto;
       border-radius: 0;
   }
+
+  .articles{
+    padding: 20px;
+  }
+
+  
 
 }
 

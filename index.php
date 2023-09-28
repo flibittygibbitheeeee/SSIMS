@@ -17,28 +17,28 @@
             <div class="container-fluid">
                 <div class="navb-logo">
                     <img src="assets/TAU logo.png" alt="hi">
-                    <h2>TAU-SSIMS</h2>
+                    <h2><span class="blink">TAU SSIMS</span></h2>
                 </div>
     
                 <div class="navb-items">
                     <ul class="main-nav">
-                        <li class="item">
-                            <a href="index.php">HOME</a>
+                        <li class="item" style="background-color: #031E23; color: white;">
+                            <a href="index.php">Home</a>
                         </li>
                         <li class="item">
-                            <a href="#">ABOUT US</a>
+                            <a href="#">About Us</a>
                         </li>
                         <li class="item">
-                            <a href="#">CONTACT US</a>
+                            <a href="#">Contact Us</a>
                        </li>
                         <li class="item">
-                            <a href="#">SPORTS</a>
+                            <a href="#">Sports</a>
                         </li>
                         <li class="item">
-                            <a href="#">SOCIOCULTURAL</a>
+                            <a href="#">Sociocultural</a>
                         </li>
                         <li class="item" id="loginItem">
-                            <a href="login.php">LOGIN</a>
+                            <a href="login.php">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="modal-middle">
                                 <img src="assets/TAU logo.png" alt="hi">
-                                <h2>TAU-SSIMS</h2>
+                                <h2><span class="blink">TAU SSIMS</span></h2>
                             </div>
                             <div class="modal-body">
                                 <ul>
@@ -175,93 +175,76 @@
         </section>
 
         <section class="articles">
+            <div class="title pb-20">
+                <h2 class="h3 mb-0" style="font-weight: 800;">LATEST NEWS</h2>
+            </div>
             <div class="row clearfix">
+
+                <!-- BEGINNING OF ARTICLE CARD -->
                 <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
-                    <div class="card card-box">
-                        <img class="card-img-top" src="imported/vendors/images/img4.jpg" alt="Card image cap"/>
+                    <div class="card card-box" style="border-radius: 0;">
+                        <img class="card-img-top" src="imported/vendors/images/img4.jpg" alt="Card image cap" style="border-radius: 0;"/>
                         <div class="card-body">
-                            <h5 class="card-title weight-500">Card title</h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
+                            <a href="articles.php" data-toggle="tooltip" data-placement="left" title="Click to read more">
+                                <h5 class="card-title weight-600">TAU to host the National SCUAA 2023</h5>
+                            </a>
+                            <p class="card-text" style="font-weight: 300;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsam non reprehenderit iure facilis quisquam ducimus laborum pariatur, repellendus rerum.
                             </p>
                             <p class="card-text">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <small class="text-muted">Posted an hour ago</small>
                             </p>
                         </div>
                     </div>
                 </div>
+                <!-- END OF ARTICLE CARD -->
+
+                <!-- BEGINNING OF ARTICLE CARD -->
                 <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
-                    <div class="card bg-dark card-box">
-                        <img class="card-img" src="imported/vendors/images/img1.jpg" alt="Card image"/>
-                        <div class="card-img-overlay">
-                            <h5 class="card-title weight-500">Card title</h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural
-                                lead-in.
-                            </p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
-                    <div class="card card-box">
+                    <div class="card card-box" style="border-radius: 0;">
+                        <img class="card-img-top" src="imported/vendors/images/img4.jpg" alt="Card image cap" style="border-radius: 0;"/>
                         <div class="card-body">
-                            <h5 class="card-title weight-500">Card title</h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
+                            <a href="articles.php" data-toggle="tooltip" data-placement="left" title="Click to read more">
+                                <h5 class="card-title weight-600">TAU to host the National SCUAA 2023</h5>
+                            </a>
+                            <p class="card-text" style="font-weight: 300;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsam non reprehenderit iure facilis quisquam ducimus laborum pariatur, repellendus rerum.
                             </p>
                             <p class="card-text">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <small class="text-muted">Posted an hour ago</small>
                             </p>
                         </div>
-                        <img class="card-img-bottom" src="imported/vendors/images/img5.jpg" alt="Card image cap"/>
                     </div>
-                </div>
+                </div> 
+                <!-- END OF ARTICLE CARD -->
+
+                <!-- BEGINNING OF ARTICLE CARD -->
+                <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
+                    <div class="card card-box" style="border-radius: 0;">
+                        <img class="card-img-top" src="imported/vendors/images/img4.jpg" alt="Card image cap" style="border-radius: 0;"/>
+                        <div class="card-body">
+                            <a href="articles.php" data-toggle="tooltip" data-placement="left" title="Click to read more">
+                                <h5 class="card-title weight-600">TAU to host the National SCUAA 2023</h5>
+                            </a>
+                            <p class="card-text" style="font-weight: 300;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsam non reprehenderit iure facilis quisquam ducimus laborum pariatur, repellendus rerum.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Posted an hour ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <!-- END OF ARTICLE CARD -->
+
+
             </div>
         </section>
 
-        <!-- <footer>
-            <div class="one child">
-                <img src="assets/code.gif" alt="hi">
-                <h2>Let's Code!</h2>
-                <h3>Pugak Pugak</h3>
-            </div>
-            <div class="two child">
-                <h2>SECTION 2</h2>
-                <h3>Kim Namjoon</h3>
-                <h3>Kim Seokjin</h3>
-                <h3>Min Yoongi</h3>
-                <h3>Jung Hoseok</h3>
-                <h3>Park Jimin</h3>
-                <h3>Kim Taehyung</h3>
-                <h3>Jeon Jungkook</h3>
-            </div>
-            <div class="three child">
-                <h2>SECTION 3</h2>
-                <h3>Kim Namjoon</h3>
-                <h3>Kim Seokjin</h3>
-                <h3>Min Yoongi</h3>
-                <h3>Jung Hoseok</h3>
-                <h3>Park Jimin</h3>
-                <h3>Kim Taehyung</h3>
-                <h3>Jeon Jungkook</h3>            
-            </div>
-            <div class="four child">
-                <h2>SECTION 4</h2>
-                <h3>Kim Namjoon</h3>
-                <h3>Kim Seokjin</h3>
-                <h3>Min Yoongi</h3>
-                <h3>Jung Hoseok</h3>
-                <h3>Park Jimin</h3>
-                <h3>Kim Taehyung</h3>
-                <h3>Jeon Jungkook</h3>
-            </div>
-        </footer> -->
     <script src="imported/vendors/scripts/core.js"></script>
+    <script src="imported/vendors/scripts/script.min.js"></script>
+    <script src="imported/vendors/scripts/process.js"></script>
+    <script src="imported/vendors/scripts/layout-settings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
