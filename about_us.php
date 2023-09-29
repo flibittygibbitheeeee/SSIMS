@@ -25,7 +25,7 @@
                         <li class="item">
                             <a href="index.php">Home</a>
                         </li>
-                        <li class="item">
+                        <li class="item" style="background-color: #031E23; color: white;">
                             <a href="about_us.php">About Us</a>
                         </li>
                         <li class="item">
@@ -71,7 +71,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li>
+                                    <li style="background-color: #031E23; color: white;">
                                         <a href="about_us.php">
                                             <span class="material-icons-outlined" id="icon">people</span>
                                             <span class="name">ABOUT US</span>
