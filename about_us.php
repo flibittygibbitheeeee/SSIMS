@@ -25,7 +25,7 @@
                         <li class="item">
                             <a href="index.php">Home</a>
                         </li>
-                        <li class="item">
+                        <li class="item" style="background-color: #031E23; color: white;">
                             <a href="about_us.php">About Us</a>
                         </li>
                         <li class="item">
@@ -71,7 +71,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li>
+                                    <li style="background-color: #031E23; color: white;">
                                         <a href="about_us.php">
                                             <span class="material-icons-outlined" id="icon">people</span>
                                             <span class="name">ABOUT US</span>
@@ -119,16 +119,14 @@
 
         <section class="fullArt">
             <div class="fullArtupper">
-                <div class="arTitle">
-                    <h1>TAU to host the National SCUAA 2023</h1>
-                </div>
+                <h1>TAU to host the National SCUAA 2023</h1>
                 <div class="datePublished">
                     <p>September 28, 2023</p>
                 </div>
                 <div class="author">
                     <p>Tarlac Agricultural University - The Golden Harvest</p>
                 </div>
-            </div>    
+            </div>
         </section>
 
     <script src="imported/vendors/scripts/core.js"></script>

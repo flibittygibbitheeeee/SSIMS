@@ -26,16 +26,16 @@
                             <a href="index.php">Home</a>
                         </li>
                         <li class="item">
-                            <a href="#">About Us</a>
+                            <a href="about_us.php">About Us</a>
                         </li>
                         <li class="item">
-                            <a href="#">Contact Us</a>
+                            <a href="contact_us.php">Contact Us</a>
                        </li>
                         <li class="item">
-                            <a href="#">Sports</a>
+                            <a href="sports.php">Sports</a>
                         </li>
                         <li class="item">
-                            <a href="#">Sociocultural</a>
+                            <a href="socio.php">Sociocultural</a>
                         </li>
                         <li class="item" id="loginItem">
                             <a href="login.php">Login</a>
@@ -63,7 +63,7 @@
                             </div>
                             <div class="modal-body">
                                 <ul>
-                                    <li>
+                                    <li style="background-color: #031E23; color: white;">
                                         <a href="index.php">
                                             <span class="material-icons-outlined" id="icon">home</span>
                                             <span class="name">HOME</span>
@@ -72,7 +72,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="about_us.php">
                                             <span class="material-icons-outlined" id="icon">people</span>
                                             <span class="name">ABOUT US</span>
                                         </a>
@@ -80,7 +80,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="contact_us.php">
                                             <span class="material-icons-outlined" id="icon">contact_support</span>
                                             <span class="name">CONTACT US</span>
                                         </a>
@@ -88,7 +88,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="sports.php">
                                             <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
                                         </a>
@@ -96,7 +96,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="socio.php">
                                             <span class="material-icons-outlined" id="icon">music_note</span>
                                             <span class="name">SOCIOCULTURAL</span>
                                         </a>
