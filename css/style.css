@@ -160,7 +160,7 @@ header .item{
   border-radius: 15px;
   width: max-content;
   margin-left: 10px;
-  padding: 5px 20px;
+  padding: 10px 20px;
 }
 
 header .item a{
@@ -559,6 +559,28 @@ form {
 
 .articles .card-box a:hover{
   color: #333;
+}
+
+.fullArt{
+  height: auto;
+  width: 100vw;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8371fd;
+}
+
+.fullArtupper .arTitle{
+  margin-bottom: 15px;
+}
+
+.fullArtupper h1{
+  color: #333;
+}
+
+.fullArtupper .datePublished p{
+  color: #212529BF;
 }
 
 .blink{

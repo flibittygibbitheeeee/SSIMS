@@ -118,13 +118,17 @@
         </header>
 
         <section class="fullArt">
-            <h1>TAU to host the National SCUAA 2023</h1>
-            <div class="datePublished">
-                <p>September 28, 2023</p>
-            </div>
-            <div class="author">
-                <p>Tarlac Agricultural University - The Golden Harvest</p>
-            </div>
+            <div class="fullArtupper">
+                <div class="arTitle">
+                    <h1>TAU to host the National SCUAA 2023</h1>
+                </div>
+                <div class="datePublished">
+                    <p>September 28, 2023</p>
+                </div>
+                <div class="author">
+                    <p>Tarlac Agricultural University - The Golden Harvest</p>
+                </div>
+            </div>    
         </section>
 
     <script src="imported/vendors/scripts/core.js"></script>
