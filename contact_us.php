@@ -10,6 +10,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("MDZK6oaYVC3YzD4LA");
+        })();
+    </script>
 </head>
 <body>
     <div class="container">
@@ -120,14 +128,89 @@
         <section class="contact">
             <div class="contactInner">
                 <div class="contactInfo">
-
+                    <div class="contactInfoInner">
+                        <h2>Contact Information</h2>
+                        <ul class="info">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>IT Center</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>09123456789</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>                                    
+                                <p>youremail@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon" id="fb"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-icon" id="git"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon" id="tg"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
                 </div>
                 <div class="contactForm">
-
+                    <h2>Send a message</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label style="text-transform: capitalize;">Name </label>
+                                    <input type="text" id="name" name="name" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label>Write your message here</label>
+                                    <textarea id="message" name="message" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" value="Send" class="btn" onclick="sendMail()">
+                    </form>
                 </div>
             </div>
         </section>
+    </div>
 
+    <script>
+        function sendMail() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (!name || !email || !message) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            var params = {
+                from_name: name,
+                email_id: email,
+                message: message
+            };
+
+            emailjs.send("service_8t9706l", "template_jmxzegj", params)
+                .then(function (response) {
+                    console.log("Email sent successfully: " + response.status);
+                    alert("Success! Your email has been sent.");
+                })
+                .catch(function (error) {
+                    console.error("Email failed to send: " + error);
+                    alert("Oops! Something went wrong. Please try again later.");
+                });
+        }
+    </script>
     <script src="imported/vendors/scripts/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

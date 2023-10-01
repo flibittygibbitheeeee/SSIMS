@@ -241,6 +241,10 @@
             </div>
         </section>
 
+        <footer>
+            <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGMENT SYSTEM</p>
+        </footer>
+    </div>
     <script src="imported/vendors/scripts/core.js"></script>
     <script src="imported/vendors/scripts/script.min.js"></script>
     <script src="imported/vendors/scripts/process.js"></script>

@@ -128,6 +128,9 @@
                 <div class="author">
                     <p>Tarlac Agricultural University - The Golden Harvest</p>
                 </div>
+            </div>
+            <div class="fullArtMiddle">
+                <img src="assets/basketball.jpg">
             </div>    
         </section>
 

@@ -126,7 +126,53 @@ demoaccount
                 </div>
             </div>
         </header>
-        
+
+    <table style="text-align: left; ">
+            <tr>
+                <th>What</th>
+                <th>When</th>
+                <th>Action</th>
+            </tr>
+            <?php  while($row3 = $result2->fetch_assoc()): ?>        
+            <tr>
+            <td style="width: 5%; border-top: solid 1px black;"><?php echo $row3['Message']; ?></td>
+            <td style="width: 2%; border-top: solid 1px black;"><?php echo $row3['Date']; ?></td>
+            <td style="width: 2%; border-top: solid 1px black; border-top: solid 1px black; ">
+                <a onClick="return confirm('CONFIRM REQUEST');" style="text-decoration: none" href="dashboard?delete=<?php echo $row3['Sched_id']; ?>" data-color="#e95959">
+                    <i class="icon-copy dw dw-delete-3"></i></a>
+            </td>
+        </tr>
+            <?php endwhile; ?>
+    </table>
+
+        <div class="card-box pb-10">
+            <table class="data-table table nowrap">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th class="datatable-nosort">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php  while($row3 = $result2->fetch_assoc()): ?> 
+                    <tr>
+                        <td><?php echo $row3['Message']; ?></td>
+                        <td><?php echo $row3['Date']; ?></td>
+                        <td>
+                            <div class="table-actions">
+                                <a onClick="return confirm('CONFIRM REQUEST');" style="text-decoration: none" href="list-of-students.php?delete=<?php echo $row['User_id']; ?>" data-color="#e95959">
+                                    <i class="icon-copy dw dw-delete-3"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <?php endwhile; ?>
+                </tbody>
+            </table>
+        </div>
+
+
         <section class="home">  
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
