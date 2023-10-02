@@ -131,7 +131,13 @@
             </div>
             <div class="fullArtMiddle">
                 <img src="assets/basketball.jpg">
-            </div>    
+            </div>   
+            <div class="fullArtLower">
+                <p style="font-style: italic;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, pariatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti culpa quia dolorum. Quibusdam labore quis praesentium ratione dignissimos id magni asperiores iusto quo. Esse, sint quia alias dicta repudiandae vero quasi. Voluptatem deleniti neque enim tempore suscipit iste expedita cupiditate eum accusantium voluptatum quo consequatur, nostrum at officia nemo minima.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, in officia fugit nihil veniam vero velit aliquid illum illo, consequuntur magni? Hic esse inventore animi in, rerum numquam ad fugiat corrupti quae non unde dolores doloribus, tempora natus, est odio.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos assumenda non consequatur incidunt unde qui, dolorum, atque libero tenetur eligendi, sequi provident! Voluptate, sint minima alias unde nesciunt eligendi numquam perspiciatis mollitia adipisci quod, tenetur dolore, saepe quo soluta autem cumque consectetur iure recusandae tempora itaque. Ducimus sapiente fuga dolorum sed laboriosam earum voluptatum exercitationem, autem quas soluta quo perferendis.</p>
+            </div> 
         </section>
 
     <script src="imported/vendors/scripts/core.js"></script>
