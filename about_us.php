@@ -118,10 +118,49 @@
         </header>
 
         <section class="about">
-            <div class="aboutUpper">
-                <h1>About TAU - SSIMS</h1>
-                <p></p>
+            <div class="aboutUpperLeft">
+                <div class="inUl">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse earum nobis autem vel 
+                        inventore ea illum repellat dolorum aliquid nostrum aspernatur provident optio ut magnam 
+                        nesciunt dolore eveniet quia asperiores, reiciendis nisi ipsum culpa. Quia aliquid, eligendi 
+                        similique non nobis rem cum illo in repellat voluptatibus asperiores! Odio, tempora.</p>
+                </div>
             </div>
+            <div class="aboutUpperRight">
+                <img src="./assets/first.png" class="desktop">
+                <img src="./assets/first.jpg" class="mobile">
+            </div>
+        </section>
+
+        <section class="values">
+            <h1>Core Values</h1>
+            <ul>
+                <li>
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error architecto mollitia reprehenderit vero voluptatum 
+                        dolor! Libero incidunt alias esse culpa?</p>
+                </li>
+                <li>
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error architecto mollitia reprehenderit vero voluptatum 
+                        dolor! Libero incidunt alias esse culpa?</p>
+                </li>
+                <li>
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error architecto mollitia reprehenderit vero voluptatum 
+                        dolor! Libero incidunt alias esse culpa?</p>
+                </li>
+                <li>
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Error architecto mollitia reprehenderit vero voluptatum 
+                        dolor! Libero incidunt alias esse culpa?</p>
+                </li>
+            </ul>
         </section>
 
     <script src="imported/vendors/scripts/core.js"></script>
