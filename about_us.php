@@ -135,32 +135,38 @@
 
         <section class="values">
             <h1>Core Values</h1>
-            <ul>
-                <li>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Error architecto mollitia reprehenderit vero voluptatum 
-                        dolor! Libero incidunt alias esse culpa?</p>
-                </li>
-                <li>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Error architecto mollitia reprehenderit vero voluptatum 
-                        dolor! Libero incidunt alias esse culpa?</p>
-                </li>
-                <li>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Error architecto mollitia reprehenderit vero voluptatum 
-                        dolor! Libero incidunt alias esse culpa?</p>
-                </li>
-                <li>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Error architecto mollitia reprehenderit vero voluptatum 
-                        dolor! Libero incidunt alias esse culpa?</p>
-                </li>
-            </ul>
+            <div class="inVal">
+                <div class="img-val">
+                    <img src="./assets/values.png">
+                </div>
+                <ul>
+                    <li>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Error architecto mollitia reprehenderit vero voluptatum 
+                            dolor! Libero incidunt alias esse culpa?</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Error architecto mollitia reprehenderit vero voluptatum 
+                            dolor! Libero incidunt alias esse culpa?</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Error architecto mollitia reprehenderit vero voluptatum 
+                            dolor! Libero incidunt alias esse culpa?</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Error architecto mollitia reprehenderit vero voluptatum 
+                            dolor! Libero incidunt alias esse culpa?</p>
+                    </li>
+                </ul>
+            </div>
+
         </section>
 
     <script src="imported/vendors/scripts/core.js"></script>

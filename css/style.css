@@ -798,17 +798,26 @@ footer{
 .values{
   width: 100vw;
   padding: 40px;
-  text-align: center;
+  text-align: right;
+}
+
+.values .inVal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .values h1{
   margin-bottom: 20px;
 }
 
+.values .inVal img{
+  width: 40vw;
+}
+
 .values ul{
   width: 60vw;
-  margin: 0 auto;
-  text-align: left;
 }
 
 .values ul li{
@@ -930,13 +939,29 @@ footer{
     height: 70vh;
     width: auto;
   }
- 
+
   .values{
-    padding: 0;
+    text-align: center;
   }
 
+  .values .inVal{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .values .inVal img{
+    width: 100vw;
+  }
+  
   .values ul{
-    width: 80vw;
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .values ul li p{
+    line-height: 2rem;
   }
 }
 
@@ -1030,14 +1055,14 @@ footer{
       margin: auto;
   }
 
-  .values ul{
+  /* .values ul{
     width: 100vw;
     padding: 20px;
   }
 
   .values ul li p{
     line-height: 2rem;
-  }
+  } */
 }
 
 @media (max-width: 850px) {
