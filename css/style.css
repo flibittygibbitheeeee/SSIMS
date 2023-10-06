@@ -41,11 +41,11 @@
 body{
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-image: url('../assets/gray-bg2.png');
+    /* background-image: url('../assets/gray-bg2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     color: #333;
 }
 
@@ -143,28 +143,72 @@ header .navb-items{
 
 header .main-nav{
   display: flex;
+  height: 100%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  margin: 0;
   width: 100%;
-  justify-content: space-between;
   position: relative;
+  padding: 0;
+}
+
+header .main-nav li:hover > .submenu{
+  display: block;
 }
 
 header .item{
-  text-align: center;
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.submenu{
+  display: none;
+  transition: 0.8s;    
+  position: absolute;
+  background-color: #031E23;
+  color: white;
+  width: 250px;
+  padding: 16px 10px;
+  margin-left: -15px;
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.submenu li{
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.submenu li:hover{
+  background-color: #404040;
+}
+
+.submenu a{
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu a span{
+  text-align: left;
+  width: 100%;
+}
+
+.submenu .menu-item-name{
   font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-  transition: 0.3s ease;
-  border-radius: 15px;
-  width: max-content;
-  margin-left: 10px;
-  padding: 10px 20px;
 }
 
 header .item a{
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0;
 }
 
 header .item:hover, header #loginItem:hover{
@@ -240,31 +284,72 @@ header .mobile-toggler{
 
 .modal-middle h2{
   margin-top: 10px;
-text-align: center;
-font-weight: 800;
-position: relative;
-color: #333;
-letter-spacing: 0.1em;
+  text-align: center;
+  font-weight: 800;
+  position: relative;
+  color: #333;
+  letter-spacing: 0.1em;
 }
 
 .modal-body {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  transition: all 0.5s ease-in-out;    
   width: 100%;
 }
 
 .modal-body ul li{
   border-radius: 10px;
-  transition: 0.3s ease-in-out;
-
 }
 
 .modal-body ul{
   padding: 0;
   color: #333;
   margin: 10px 0;
+  position: relative;
+}
+
+.modal-body ul li:hover > .modal-submenu{
+  display: block;
+}
+
+.modal-body .modal-nav{
+  position: relative;
+}
+
+.modal-submenu{
+  display: none;
+  z-index: 1000;
+  color: #031E23;
+  background-color: white;
+  padding: 16px 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.modal-submenu li{
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-submenu li:hover{
+  background-color: #404040;
+}
+
+.modal-submenu a{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-submenu a span{
+  text-align: left;
+  width: 100%;
+}
+
+.modal-submenu .menu-item-name{
+  font-size: 14px;
 }
 
 .modal-body ul li:hover{
@@ -514,7 +599,6 @@ form {
   padding: 10px 0;
   display: flex;
   align-items: center;
-  background-color: white;
   justify-content: center;
 }
 

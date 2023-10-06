@@ -10,6 +10,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -31,6 +34,22 @@
                         <li class="item">
                             <a href="contact_us.php">Contact Us</a>
                        </li>
+                       <li class="item" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                            <a href="tryouts.php">Try-outs</a>
+                            <!-- Dropdown content -->
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">
+                                        <span class="menu-item-name">Case Studies</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="menu-item-name">Design Samples</span>
+                                    </a>
+                                </li>
+                            </ul>                       
+                        </li>
                         <li class="item">
                             <a href="sports.php">Sports</a>
                         </li>
@@ -84,6 +103,26 @@
                                             <span class="material-icons-outlined" id="icon">contact_support</span>
                                             <span class="name">CONTACT US</span>
                                         </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a>
+                                            <span class="material-icons-outlined" id="icon">sort</span>
+                                            <span class="name">TRY-OUTS</span>
+                                        </a>
+                                        <ul class="modal-submenu">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="menu-item-name">Case Studies</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="menu-item-name">Design Samples</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                                 <ul>
