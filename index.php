@@ -106,7 +106,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li>
+                                    <li style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
                                         <a>
                                             <span class="material-icons-outlined" id="icon">sort</span>
                                             <span class="name">TRY-OUTS</span>

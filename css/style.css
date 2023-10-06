@@ -298,73 +298,74 @@ header .mobile-toggler{
   width: 100%;
 }
 
-.modal-body ul li{
-  border-radius: 10px;
-}
-
-.modal-body ul{
+.modal-body ul {
   padding: 0;
   color: #333;
   margin: 10px 0;
-  position: relative;
+  list-style: none;
 }
 
-.modal-body ul li:hover > .modal-submenu{
-  display: block;
-}
-
-.modal-body .modal-nav{
-  position: relative;
-}
-
-.modal-submenu{
-  display: none;
-  z-index: 1000;
-  color: #031E23;
-  background-color: white;
-  padding: 16px 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.modal-submenu li{
+.modal-body ul li {
   border-radius: 10px;
-  display: flex;
-  align-items: flex-start;
+  position: relative; /* Add position relative to the parent li for absolute positioning */
   transition: 0.3s ease-in-out;
 }
 
-.modal-submenu li:hover{
-  background-color: #404040;
-}
-
-.modal-submenu a{
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-submenu a span{
-  text-align: left;
-  width: 100%;
-}
-
-.modal-submenu .menu-item-name{
-  font-size: 14px;
-}
-
-.modal-body ul li:hover{
+.modal-body ul li:hover {
   background-color: #031E23;
   color: white;
 }
 
-.modal-body ul li a{
+.modal-body ul li a {
   font-weight: 500;
   display: flex;
   line-height: 3rem;
   align-items: center;
   width: auto;
-  justify-items: center;
+  justify-content: center;
   padding-left: 2rem;
+  text-decoration: none;
+}
+
+/* Submenu styles */
+.modal-submenu {
+  display: none;
+  z-index: 1000;
+  color: #031E23;
+  background-color: rgb(214, 82, 82);
+  padding: 16px 10px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 80%; 
+  left: 0; /* Position submenu on the left side of the parent li */
+}
+
+.modal-submenu li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-submenu li:hover {
+  background-color: #404040;
+}
+
+.modal-submenu a {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-submenu a span {
+  text-align: left;
+  width: 100%;
+}
+
+.modal-submenu .menu-item-name {
+  font-size: 14px;
+}
+
+.modal-body ul li:hover .modal-submenu {
+  display: block; /* Show submenu when the parent li is hovered */
 }
 
 .modal-body #icon{
