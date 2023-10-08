@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+:root {
+  /** primary **/
+  --color-primary: #336b4f;
+
+  --color-dark: #222428;
+  --color-dark-rgb: 34, 36, 40;
+  --color-dark-contrast: whitesmoke;
+  --color-dark-contrast-rgb: 255, 255, 255;
+  --color-dark-shade: #1e2023;
+  --color-dark-tint: #5e6066;
+  --color-background:  #f3f1f1;
+  --color-white: #ffffff;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+  
+  --card-padding: 1.8 rem;
+  --padding-1: 1.2rem;
+  --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  --box-shadows: 0 2rem 3rem var(var(--color-dark-tint));
+}
+
+input[type=text]{
+     text-transform: capitalize;
+}
+
+body{
+    background-color: #d6f5d6;
+}
+
+.content{
+  background: var(--color-white);
+  display: block;
+  margin: 3rem auto;
+  position: relative;
+  padding: 1rem 2rem;
+  max-width: 650px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 12px 4px;
+  border-radius: var(--border-radius-2); 
+}
+
+.img-done{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one{
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 7px solid var(--color-primary);
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  box-shadow: 0 5px 5px -5px #333;
+  border-radius: var(--border-radius-2); 
+}
+
+.one p{
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.one .inq{
+  font-style: italic;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.one .inq a{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.one .inq a:hover{
+  text-decoration: underline;
+}
+
+.title{
+  padding: 0.5rem 0;
+}
+
+.title h2{
+  color: #336b4f;
+}
+
+.form-input{
+  margin-top: 0.75rem;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  box-shadow: 0 5px 5px -5px #333;
+  transition: 0.3s;
+}
+
+.form-input:active{
+  border-left: 5px solid #336b4f;
+}
+
+.form-input:hover{
+    border-left: 5px solid #336b4f;
+}
+
+.form-input p{
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.form-input p span{
+  color: red;
+  font-weight: bolder;
+}
+
+.form-input input{
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  transition: 0.4s;
+  background: #ffffff;
+  font-family: Cambria;
+}
+
+.select{
+  -webkit-appearance: menulist;
+  padding: 10px;
+  color: black;
+  background: whitesmoke;
+  border: 1px solid gray;
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+  bottom: 10;
+  position: absolute;
+  position: relative;
+}
+
+.select::-webkit-scrollbar {
+  width: 5px;
+}
+
+.select::-webkit-scrollbar-track {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+ 
+.select::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+.select::-webkit-scrollbar-thumb:hover {
+  background: #336b4f;
+  border-radius: 5px;
+}
+
+.select option{
+  background: white;
+  color: black;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--color-primary);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.submit{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button{
+  padding: 9px 13px;
+  background: #336b4f;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  width: 100px;    
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+button:hover{
+  background: #4a9670;
+}
+
+@media(max-width:675px){
+  .content{
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      width: 100%;
+      box-shadow: none;
+      border-radius: 0;      
+  }
+}

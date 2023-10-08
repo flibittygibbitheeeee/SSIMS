@@ -152,7 +152,8 @@ if(isset($_GET['delete'])){
 		<link rel="stylesheet" type="text/css" href="../imported/src/plugins/datatables/css/dataTables.bootstrap4.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../imported/src/plugins/datatables/css/responsive.bootstrap4.min.css"/>
 		<link rel="stylesheet" type="text/css" href="../imported/vendors/styles/style.css" />
-		<script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
 
 	</head>
 	<body>
@@ -176,25 +177,31 @@ if(isset($_GET['delete'])){
 					<ul id="accordion-menu">
 						<li>
 							<a href="#" class="dropdown-toggle no-arrow" style="background: #031E23; color: white;">
-								<span class="micon bi bi bi-house" data-color="#ffffff"></span>
+                                <span class="material-symbols-outlined micon" style="font-size: 30px;" data-color="#ffffff">dashboard</span> 
                                 <span class="mtext">Dashboard</span>
 							</a>
 						</li>
 				        <li>
 							<a href="list-of-trainers.php" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-person-check"></span>
+                                <span class="material-symbols-outlined micon" style="font-size: 30px;">person_play</span> 
 								<span class="mtext">Trainers</span>
 							</a>
 						</li> 
 						<li>
 							<a href="list-of-students.php" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-person-check"></span>
+                                <span class="material-symbols-outlined micon" style="font-size: 30px;">group</span> 
 								<span class="mtext">Students</span>
 							</a>
 						</li>
 						<li>
+							<a href="Student-Database.php" class="dropdown-toggle no-arrow" >
+                                <span class="material-symbols-outlined micon" style="font-size: 30px;">database</span> 
+								<span class="mtext">Student's Database</span>
+							</a>
+						</li>
+						<li>
 							<a href="../index.php" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-arrow-left"></span>
+                                <span class="material-symbols-outlined micon" style="font-size: 30px;">logout</span></span> 
 								<span class="mtext">Logout</span>
 							</a>
 						</li>
@@ -278,8 +285,8 @@ if(isset($_GET['delete'])){
 										<?php $result2 = $mysqli->query("SELECT * FROM Schedule ") or die($mysqli->error); ?>
 
 
-                                        <div class="card-box pb-10">
-                                                <table class="data-table table nowrap">
+                                        <div class="card-box pb-10" id="cardTable">
+                                            <table class="data-table table nowrap">
                                                     <thead>
                                                         <tr>
                                                             <th>Event</th>
@@ -294,7 +301,7 @@ if(isset($_GET['delete'])){
                                                             <td><?php echo $row3['Date']; ?></td>
                                                             <td>
                                                                 <div class="table-actions">
-                                                                    <a onClick="return confirm('CONFIRM REQUEST');" style="text-decoration: none" href="list-of-students.php?delete=<?php echo $row['User_id']; ?>" data-color="#e95959">
+                                                                    <a onClick="return confirm('CONFIRM REQUEST');" style="text-decoration: none" href="dashboard.php?delete=<?php echo $row3['Sched_id']; ?>" data-color="#e95959">
                                                                         <i class="icon-copy dw dw-delete-3"></i>
                                                                     </a>
                                                                 </div>
@@ -356,18 +363,20 @@ if(isset($_GET['delete'])){
 										<div class="form-group" style="margin-top: 20px;">
 											<label style="font-weight: 600; font-size: 24px; color: red;">Announcement :</label>
 										</div>
-										
-										
-										<?php 
-											$result2 = $mysqli->query("SELECT * FROM Announcement") or die($mysqli->error);
-                                	        while($row2 = $result2->fetch_assoc())
-                                	        {
-                                    			$mes = $row2['Message'];
-                                    			echo $mes; 
-                                    	?>
-                                    	    <br><br>		
-                    		            <?php } ?>
-										</div>
+										<div class="card-box pb-10" id="cardTable">
+                                            <table class="data-table table nowrap">
+                                                <tbody>
+                                                <?php
+                                                    $result2 = $mysqli->query("SELECT * FROM Announcement") or die($mysqli->error);
+                                                    while($row2 = $result2->fetch_assoc()){ ?>
+                                                    <tr>
+                                                        <td><?php echo $row2['Message']; ?></td>
+                                                    </tr>
+                                                    <?php } ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+									</div>
 						        </div>
 						    </div>
 						</div>

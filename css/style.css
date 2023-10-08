@@ -154,26 +154,28 @@ header .main-nav{
 
 header .main-nav li:hover > .submenu{
   display: block;
+  transition: 0.3s ease-in-out;
 }
 
 header .item{
-  padding: 5px 15px;
+  padding: 15px;
   margin: 5px;
-  border-radius: 10px;
 }
 
 .submenu{
   display: none;
   transition: 0.8s;    
   position: absolute;
-  background-color: #031E23;
-  color: white;
+  color: #031E23;
+  background-color: white;
   width: 250px;
   padding: 16px 10px;
-  margin-left: -15px;
+  margin-left: -90px;
   z-index: 1000;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  top: 92%;
+  border-radius: 10px;
+  transition: 1s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 12px 4px;
 }
 
 .submenu li{
@@ -181,10 +183,12 @@ header .item{
   display: flex;
   align-items: flex-start;
   padding: 16px;
+  transition: 0.3s ease-in-out;
 }
 
 .submenu li:hover{
   background-color: #404040;
+  color: white;
 }
 
 .submenu a{
@@ -211,9 +215,24 @@ header .item a{
   margin: 0;
 }
 
-header .item:hover, header #loginItem:hover{
-  background-color: #031E23;
+header .item:hover{
+  border-bottom: 2px solid #031E23;
+}
+
+header #loginItem{
+  background-color: #024e02;
   color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+header #loginItem:hover{
+  border-bottom: none;
+  background-color: #1d611d;
+}
+
+header #drpdwn{
+  border-radius: 0;
 }
 
 header .mobile-toggler{
@@ -292,7 +311,7 @@ header .mobile-toggler{
 }
 
 .modal-body {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   font-weight: 600;
   width: 100%;
@@ -307,8 +326,8 @@ header .mobile-toggler{
 
 .modal-body ul li {
   border-radius: 10px;
+  padding: 5px;
   position: relative; /* Add position relative to the parent li for absolute positioning */
-  transition: 0.3s ease-in-out;
 }
 
 .modal-body ul li:hover {
@@ -322,7 +341,7 @@ header .mobile-toggler{
   line-height: 3rem;
   align-items: center;
   width: auto;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 2rem;
   text-decoration: none;
 }
@@ -331,8 +350,8 @@ header .mobile-toggler{
 .modal-submenu {
   display: none;
   z-index: 1000;
-  color: #031E23;
-  background-color: rgb(214, 82, 82);
+  background-color: #031E23;
+  color: white;
   padding: 16px 10px;
   width: 100%;
   border-radius: 0 0 10px 10px;
@@ -343,15 +362,17 @@ header .mobile-toggler{
 
 .modal-submenu li {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start;  
+  margin: 16px;
 }
 
-.modal-submenu li:hover {
+.modal-body ul ul li:hover {
   background-color: #404040;
 }
 
 .modal-submenu a {
   display: flex;
+  color: white;
   flex-direction: column;
 }
 
@@ -715,7 +736,7 @@ form {
   min-width: 1000px;
   min-height: 450px;
   display: flex;
-  z-index: 1000;
+  z-index: 500;
   border-radius: 10px;
 }
 

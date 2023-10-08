@@ -10,9 +10,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/TAU logo.png"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <script src="https://kit.fontawesome.com/93e3069a39.js" crossorigin="anonymous"></script>
-    <style>
-
-    </style>
 </head>
 <body>
     <div class="container">
@@ -25,7 +22,7 @@
     
                 <div class="navb-items">
                     <ul class="main-nav">
-                        <li class="item" style="background-color: #031E23; color: white;">
+                        <li class="item" style="border-bottom: 2px solid #031E23;">
                             <a href="index.php">Home</a>
                         </li>
                         <li class="item">
@@ -34,18 +31,18 @@
                         <li class="item">
                             <a href="contact_us.php">Contact Us</a>
                        </li>
-                       <li class="item" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
-                            <a href="tryouts.php">Try-outs</a>
+                       <li class="item" id="drpdwn">
+                            <a>Try-outs</a>
                             <!-- Dropdown content -->
                             <ul class="submenu">
                                 <li>
                                     <a href="#">
-                                        <span class="menu-item-name">Case Studies</span>
+                                        <span class="menu-item-name">Submenu 1</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="menu-item-name">Design Samples</span>
+                                        <span class="menu-item-name">Submenu 2</span>
                                     </a>
                                 </li>
                             </ul>                       
@@ -114,12 +111,12 @@
                                         <ul class="modal-submenu">
                                             <li>
                                                 <a href="#">
-                                                    <span class="menu-item-name">Case Studies</span>
+                                                    <span class="menu-item-name">Submenu 1</span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <span class="menu-item-name">Design Samples</span>
+                                                    <span class="menu-item-name">Submenu 2</span>
                                                 </a>
                                             </li>
                                         </ul>
