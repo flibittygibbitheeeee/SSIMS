@@ -115,7 +115,7 @@ body{
 }
 
 .form-input:hover{
-    border-left: 5px solid #336b4f;
+  border-left: 5px solid #336b4f;
 }
 
 .form-input p{
@@ -150,6 +150,7 @@ body{
   bottom: 10;
   position: absolute;
   position: relative;
+  border-radius: 5px;
 }
 
 .select::-webkit-scrollbar {
@@ -173,6 +174,14 @@ body{
 .select option{
   background: white;
   color: black;
+}
+
+.textarea{
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border-radius: 5px;
+  height: 5rem;
 }
 
 .container {
