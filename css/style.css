@@ -158,8 +158,10 @@ header .main-nav li:hover > .submenu{
 }
 
 header .item{
-  padding: 15px;
+  border-radius: 20px;
+  padding: 10px 20px;
   margin: 5px;
+  transition: 0.3s ease-in-out;
 }
 
 .submenu{
@@ -174,7 +176,7 @@ header .item{
   z-index: 1000;
   top: 92%;
   border-radius: 10px;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 12px 4px;
 }
 
@@ -216,7 +218,8 @@ header .item a{
 }
 
 header .item:hover{
-  border-bottom: 2px solid #031E23;
+  background-color: #404040;
+  color: white;
 }
 
 header #loginItem{
@@ -667,6 +670,25 @@ form {
 
 .articles .card-box a:hover{
   color: #333;
+}
+
+.sports{
+  height: 100%;
+  width: 100vw;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sports .card-body a {
+  transition: .3s ease-in-out;
+}
+
+.sports .card-body a:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 .fullArtupper{
@@ -1210,6 +1232,10 @@ footer{
   }
 
   .articles{
+    padding: 20px;
+  }
+
+  .sports{
     padding: 20px;
   }
 

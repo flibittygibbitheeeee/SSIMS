@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../assets/red.jpg'); */
+    background: url("https://i.postimg.cc/Wzn21hCS/red.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.middle {
+    background: whitesmoke;
+    padding: 30px 35px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px -5px #333;
+    color: rgb(48, 38, 56);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+p,
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+.image{
+    margin-bottom: 30px;
+}
+
+.image img{
+    background: url("https://i.postimg.cc/JhWWqT5v/1295594.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.image::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.art{
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.bar{
+    width: 100%;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: brown;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.current, .duration {
+    font-size: 12px;
+}
+
+.duration {
+    position: absolute;
+    right: 0;
+}
+
+.control {
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 40px; 
+}
+
+.control i{
+    font-size: 30px;
+    color: rgb(146, 84, 122);
+    text-shadow: 1px 1px 2px rgb(150, 150, 150);
+    transition: 0.3ms ease-in-out;
+}
+
+.control .play{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(161, 73, 128);
+    box-shadow: 0 5px 5px -5px #333;
+    transition: 0.3ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control .play i{
+    color: white;
+}
+
+.control i:hover{
+    color: rgb(175, 124, 156);
+}
+
+.control .play i:hover{
+    color: white;
+}
+
+.control .play:hover{
+    background-color: rgb(170, 99, 143);
+}

@@ -22,7 +22,7 @@
     
                 <div class="navb-items">
                     <ul class="main-nav">
-                        <li class="item" style="border-bottom: 2px solid #031E23;">
+                        <li class="item" style="background-color: #031E23; color: white;">
                             <a href="index.php">Home</a>
                         </li>
                         <li class="item">

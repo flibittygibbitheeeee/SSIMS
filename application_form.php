@@ -153,22 +153,27 @@
                         <option value="arnis">Arnis</option>
                         <option value="archery">Archery</option>
                         <option value="badminton">Badminton</option>
+
                         <option value="baseball">Baseball</option>
                         <option value="basketball">Basketball</option>
                         <option value="beach volleyball">Beach Volleyball</option>
                         <option value="boxing">Boxing</option>
+
                         <option value="chess">Chess</option>
                         <option value="dancesports">Dancesports</option>
                         <option value="football">Football</option>
                         <option value="futsal">Futsal</option>
+
                         <option value="karate-do">Karate-do</option>
                         <option value="lawn tennis">Lawn Tennis</option>
                         <option value="pencaksilat">Pencaksilat</option>
                         <option value="sepak takraw">Sepak Takraw</option>
+
                         <option value="softball">Softball</option>
                         <option value="swimming">Swimming</option>
                         <option value="table tennis">Table Tennis</option>
                         <option value="taekwondo">Taekwondo</option>
+                        
                         <option value="volleyball">Volleyball</option>
                         <option value="billiard">Billiard</option>
                         <option value="others">Others</option>
