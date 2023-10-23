@@ -88,7 +88,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li>
+                                    <li style="background-color: #031E23; color: white;">
                                         <a href="sports.php">
                                             <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
@@ -96,7 +96,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li style="background-color: #031E23; color: white;">
+                                    <li>
                                         <a href="socio.php">
                                             <span class="material-icons-outlined" id="icon">music_note</span>
                                             <span class="name">SOCIOCULTURAL</span>
@@ -131,7 +131,7 @@
                         </div>
                         <img class="card-img-top" src="imported/vendors/images/img5.jpg" alt="Card image cap" style="border-radius: 0;"/>
                         <div class="card-body">
-                            <a href="athletics.php" class="btn btn-primary">Take me there</a>
+                            <a href="sports/athletics.php" class="btn btn-primary">Take me there</a>
                         </div>
                     </div>
                 </div> 
