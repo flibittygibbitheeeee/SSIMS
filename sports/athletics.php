@@ -126,7 +126,7 @@
                     <div class="searchbar">
                         <span class="material-icons-outlined" id="search">search</span>
                         <div class="input-group">
-                            <input type="search" placeholder="Search here">
+                            <input type="search" placeholder="Search here" id="search" autocomplete="off">
                         </div>
                     </div>
                 </section>
@@ -143,7 +143,7 @@
                         <tbody>
                             <tr>
                                 <td data-label="PLAYER" style="font-weight: 500;">
-                                    <a href="#" data-toggle="modal" data-target="#Medium-modal1" btype="button">Greenhills Peligro</a>
+                                    <a href="#" id="openModal">Greenhills Peligro</a>
                                 </td>
                                 <td data-label="SEX" style="font-weight: 500;">Female</td>
                                 <td data-label="AGE" style="font-weight: 500;">22</td>
@@ -163,6 +163,33 @@
                             </tr>
                         </tbody>     
                     </table>
+                    <!-- <div class="modal fade" id="view-player" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        CANCEL
+                                    </button>
+                                    <button name="add_new" type="submit" class="btn btn-primary">
+                                        CREATE
+                                    </button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div> -->
+                    <div id="myModal" class="nxtmodal">
+                        <div class="modalcontent">
+                            <span class="close" id="closeModal">&times;</span>
+                            <p>Modal content goes here.</p>
+                        </div>
+                    </div>
                 </section>
             </div>
         </section>
@@ -170,37 +197,6 @@
         <footer>
             <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGMENT SYSTEM</p>
         </footer>
-    </div>
-        							
-    <div class="modal fade" id="Medium-modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myLargeModalLabel1">
-                        Add new trainer
-                    </h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input class="form-control" type="text" name="email"/>
-                    </div>
-                    <div class="form-group">
-                        <label>Department</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        CANCEL
-                    </button>
-                    <button name="add_new" type="submit" class="btn btn-primary">
-                        CREATE
-                    </button>
-                </div>
-            </div>
-        
-        </div>
     </div>
     
     <script src="../js/sorter.js"></script>
