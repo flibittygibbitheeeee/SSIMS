@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../imported/vendors/styles/style.css" />
     <link rel="stylesheet" href="../css/style.css">
     <title>TAU - SSIMS</title>    
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/TAU logo.png"/>
@@ -22,22 +23,22 @@
                 <div class="navb-items">
                     <ul class="main-nav">
                         <li class="item">
-                            <a href="../index.php">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li class="item">
-                            <a href="../about_us.php">About Us</a>
+                            <a href="about_us.php">About Us</a>
                         </li>
                         <li class="item">
-                            <a href="./contact_us.php">Contact Us</a>
+                            <a href="contact_us.php">Contact Us</a>
                        </li>
-                        <li class="item">
-                            <a href="../sports.php">Sports</a>
+                        <li>
+                            <a href="sports.php">Sports</a>
                         </li>
                         <li class="item">
-                            <a href="../socio.php">Sociocultural</a>
+                            <a href="socio.php">Sociocultural</a>
                         </li>
                         <li class="item" id="loginItem">
-                            <a href="../login.php">Login</a>
+                            <a href="login.php">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -57,13 +58,13 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
                             </div>
                             <div class="modal-middle">
-                                <img src="../assets/TAU logo.png" alt="hi">
+                                <img src="assets/TAU logo.png" alt="hi">
                                 <h2><span class="blink">TAU SSIMS</span></h2>
                             </div>
                             <div class="modal-body">
                                 <ul>
                                     <li>
-                                        <a href="../index.php">
+                                        <a href="index.php">
                                             <span class="material-icons-outlined" id="icon">home</span>
                                             <span class="name">HOME</span>
                                         </a>
@@ -71,7 +72,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../about_us.php">
+                                        <a href="about_us.php">
                                             <span class="material-icons-outlined" id="icon">people</span>
                                             <span class="name">ABOUT US</span>
                                         </a>
@@ -79,15 +80,15 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../contact_us.php">
+                                        <a href="contact_us.php">
                                             <span class="material-icons-outlined" id="icon">contact_support</span>
                                             <span class="name">CONTACT US</span>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li>
-                                        <a href="../sports.php">
+                                    <li >
+                                        <a href="sports.php">
                                             <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
                                         </a>
@@ -95,7 +96,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../socio.php">
+                                        <a href="socio.php">
                                             <span class="material-icons-outlined" id="icon">music_note</span>
                                             <span class="name">SOCIOCULTURAL</span>
                                         </a>
@@ -103,7 +104,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../login.php">
+                                        <a href="login.php">
                                             <span class="material-icons-outlined" id="icon">login</span>
                                             <span class="name">LOGIN</span>
                                         </a>
@@ -115,92 +116,37 @@
                 </div>
             </div>
         </header>
-
-        <section class="requests">
+    
+        <section class="sports">
             <div class="title pb-20">
-                <h2 class="h3 mb-0" style="font-weight: 800;">Meet the Members</h2>
+                <h2 class="h3 mb-0" style="font-weight: 800;">Athletics</h2>
             </div>
-            <div class="table">
-                <section class="table__header">
-                    <a href="../application_form.php">Apply for Tryouts</a>
-                    <div class="searchbar">
-                        <span class="material-icons-outlined" id="search">search</span>
-                        <div class="input-group">
-                            <input type="search" placeholder="Search here" id="search" autocomplete="off">
+            
+            <div class="row clearfix">
+                <!-- ATHLETICS -->
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h2>Greenhills Peligro</h2>
+                        </div>
+                        <img class="card-img-top" src="../imported/vendors/images/img5.jpg" alt="Card image cap" style="border-radius: 0;"/>
+                        <div class="card-body">
+                            <a href="sports/athletics.php" class="btn btn-primary">Take me there</a>
                         </div>
                     </div>
-                </section>
-                <section class="table__body">
-                    <table class="mesa" id="myTable">
-                        <thead class="mesa-head">
-                            <tr>
-                                <th onclick="sortTable(0)"> PLAYER <span class="icon-arrow">&UpArrow;</span></th>
-                                <th onclick="sortTable(1)"> SEX <span class="icon-arrow">&UpArrow;</span></th>
-                                <th onclick="sortTable(2)"> AGE <span class="icon-arrow">&UpArrow;</span></th>
-                                <th onclick="sortTable(3)"> DATE JOINED <span class="icon-arrow">&UpArrow;</span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="PLAYER" style="font-weight: 500;">
-                                    <a href="#" id="openModal">Greenhills Peligro</a>
-                                </td>
-                                <td data-label="SEX" style="font-weight: 500;">Female</td>
-                                <td data-label="AGE" style="font-weight: 500;">22</td>
-                                <td data-label="DATE JOINED" style="font-weight: 500;">10-22-2023</td>
-                            </tr>
-                            <tr>
-                                <td data-label="PLAYER" style="font-weight: 500;">Acmad Cali</td>
-                                <td data-label="SEX" style="font-weight: 500;">Male</td>
-                                <td data-label="AGE" style="font-weight: 500;">36</td>
-                                <td data-label="DATE JOINED" style="font-weight: 500;">10-23-2023</td>
-                            </tr>
-                            <tr>
-                                <td data-label="PLAYER" style="font-weight: 500;">Eugene Valeriano</td>
-                                <td data-label="SEX" style="font-weight: 500;">Male</td>
-                                <td data-label="AGE" style="font-weight: 500;">35</td>
-                                <td data-label="DATE JOINED" style="font-weight: 500;">10-24-2023</td>
-                            </tr>
-                        </tbody>     
-                    </table>
-                    <!-- <div class="modal fade" id="view-player" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
-                                </div>
-                                <div class="modal-body">
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                                        CANCEL
-                                    </button>
-                                    <button name="add_new" type="submit" class="btn btn-primary">
-                                        CREATE
-                                    </button>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div> -->
-                    <div id="myModal" class="nxtmodal">
-                        <div class="modalcontent">
-                            <span class="close" id="closeModal">&times;</span>
-                            <p>Modal content goes here.</p>
-                        </div>
-                    </div>
-                </section>
+                </div> 
             </div>
         </section>
-
+        
         <footer>
             <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGMENT SYSTEM</p>
         </footer>
     </div>
     
-    <script src="../js/sorter.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../imported/vendors/scripts/core.js"></script>
+    <script src="../imported/vendors/scripts/script.min.js"></script>
+    <script src="../imported/vendors/scripts/process.js"></script>
+    <script src="../imported/vendors/scripts/layout-settings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -143,7 +143,7 @@
                         <tbody>
                             <tr>
                                 <td data-label="PLAYER" style="font-weight: 500;">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#view-player">Greenhills Peligro</a>
+                                    <a href="#" id="openModal">Greenhills Peligro</a>
                                 </td>
                                 <td data-label="SEX" style="font-weight: 500;">Female</td>
                                 <td data-label="AGE" style="font-weight: 500;">22</td>
@@ -163,14 +163,11 @@
                             </tr>
                         </tbody>     
                     </table>
-                    <div class="modal fade" id="view-player" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
+                    <!-- <div class="modal fade" id="view-player" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4 class="modal-title" id="myLargeModalLabel1">
-                                        Add new trainer
-                                    </h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
                                 </div>
                                 <div class="modal-body">
 
@@ -185,6 +182,12 @@
                                 </div>
                             </div>
                         
+                        </div>
+                    </div> -->
+                    <div id="myModal" class="nxtmodal">
+                        <div class="modalcontent">
+                            <span class="close" id="closeModal">&times;</span>
+                            <p>Modal content goes here.</p>
                         </div>
                     </div>
                 </section>
