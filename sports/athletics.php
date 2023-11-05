@@ -23,22 +23,26 @@
                 <div class="navb-items">
                     <ul class="main-nav">
                         <li class="item">
-                            <a href="../index.php">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li class="item">
-                            <a href="../about_us.php">About Us</a>
+                            <a href="about_us.php">About Us</a>
                         </li>
                         <li class="item">
+<<<<<<< HEAD
                             <a href="../contact_us.php">Contact Us</a>
+=======
+                            <a href="contact_us.php">Contact Us</a>
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
                        </li>
-                        <li class="item">
-                            <a href="../sports.php">Sports</a>
+                        <li>
+                            <a href="sports.php">Sports</a>
                         </li>
                         <li class="item">
-                            <a href="../socio.php">Sociocultural</a>
+                            <a href="socio.php">Sociocultural</a>
                         </li>
                         <li class="item" id="loginItem">
-                            <a href="../login.php">Login</a>
+                            <a href="login.php">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +68,7 @@
                             <div class="modal-body">
                                 <ul>
                                     <li>
-                                        <a href="../index.php">
+                                        <a href="index.php">
                                             <span class="material-icons-outlined" id="icon">home</span>
                                             <span class="name">HOME</span>
                                         </a>
@@ -72,7 +76,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../about_us.php">
+                                        <a href="about_us.php">
                                             <span class="material-icons-outlined" id="icon">people</span>
                                             <span class="name">ABOUT US</span>
                                         </a>
@@ -80,7 +84,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../contact_us.php">
+                                        <a href="contact_us.php">
                                             <span class="material-icons-outlined" id="icon">contact_support</span>
                                             <span class="name">CONTACT US</span>
                                         </a>
@@ -88,7 +92,11 @@
                                 </ul>
                                 <ul>
                                     <li >
+<<<<<<< HEAD
                                         <a href="../sports.php">
+=======
+                                        <a href="sports.php">
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
                                             <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
                                         </a>
@@ -96,7 +104,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../socio.php">
+                                        <a href="socio.php">
                                             <span class="material-icons-outlined" id="icon">music_note</span>
                                             <span class="name">SOCIOCULTURAL</span>
                                         </a>
@@ -104,7 +112,7 @@
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="../login.php">
+                                        <a href="login.php">
                                             <span class="material-icons-outlined" id="icon">login</span>
                                             <span class="name">LOGIN</span>
                                         </a>
@@ -118,6 +126,7 @@
         </header>
     
         <section class="sports">
+<<<<<<< HEAD
             <form method="post" class="apply" target="_blank">
                 <button type="submit" id="add" name="apply">Apply for Tryouts</button>
             </form>
@@ -149,15 +158,30 @@
             
             <div class="title pb-20 pt-20">
                 <h2 class="h3 mb-0">The Members</h2>
+=======
+            <div class="title pb-20">
+                <h2 class="h3 mb-0" style="font-weight: 800;">Athletics</h2>
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
             </div>
             
             <div class="row clearfix">
                 <!-- ATHLETICS -->
+<<<<<<< HEAD
                                 
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Axiel Season Three</h2>
+=======
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h2>Greenhills Peligro</h2>
+                        </div>
+                        <img class="card-img-top" src="../imported/vendors/images/img5.jpg" alt="Card image cap" style="border-radius: 0;"/>
+                        <div class="card-body">
+                            <a href="sports/athletics.php" class="btn btn-primary">Take me there</a>
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
                         </div>
                         <img class="card-img-top" src="../uploads/34928-axie-full-transparent.png" alt="Card image cap" style="border-radius: 0; height: 200px; width: auto;"/>
                         <div class="card-body">
@@ -171,6 +195,7 @@
 						</div>
                     </div>
                 </div> 
+<<<<<<< HEAD
                  
                 <div class="col-sm-12 col-md-6 col-lg-4 mb-30">
                     <div class="card card-box">
@@ -211,6 +236,8 @@
                         </div>
                     </a>
                 </div>
+=======
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
             </div>
         </section>
         

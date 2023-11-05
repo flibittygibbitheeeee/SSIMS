@@ -159,3 +159,24 @@ function sortMe(n) {
     }
   }
 }
+
+var modal = document.getElementById("myModal");
+var openButton = document.getElementById("openModal");
+var closeButton = document.getElementById("closeModal");
+
+// Open the modal when the open button is clicked
+openButton.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Close the modal when the close button is clicked or when the background is clicked
+closeButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close the modal when the background is clicked
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}

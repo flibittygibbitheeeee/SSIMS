@@ -1,3 +1,17 @@
+<?php 
+
+session_start();
+include '../db.php';
+
+if(isset($_POST['apply'])){
+
+	$event = 'Athletics';
+    header("location: ../Try-outs/Verification.php"); $_SESSION["User"] = $event;
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,15 +135,19 @@
             <div class="title pb-20">
                 <h2 class="h3 mb-0" style="font-weight: 800;">Meet the Members</h2>
             </div>
+        
+        <!-- nilagyan ko ng form need ko kasi ipasa yung session -->
+        <form method="Post" target="_blank">
             <div class="table">
                 <section class="table__header">
-                    <a href="../application_form.php">Apply for Tryouts</a>
+                    <button type="submit" name="apply">Apply for Tryouts</button> <!-- GINAWA KONG BUTTON YUNG <a></a> -->
                     <div class="searchbar">
                         <span class="material-icons-outlined" id="search">search</span>
                         <div class="input-group">
                             <input type="search" placeholder="Search here">
                         </div>
                     </div>
+        
                 </section>
                 <section class="table__body">
                     <table class="mesa" id="myTable">
@@ -142,8 +160,9 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <!--Yung sa a href kuya, sample link lang yan. Dapat dederetso yan sa page na view kung san makikita yung picture nung player and yung other details niya.-->
                             <tr>
-                                <td data-label="PLAYER" style="font-weight: 500;"><a href="../application_form.php">Greenhills Peligro</a></td>
+                                <td data-label="PLAYER" style="font-weight: 500;"><a href=../Try-outs/application.php">Greenhills Peligro</a></td>
                                 <td data-label="SEX" style="font-weight: 500;">Female</td>
                                 <td data-label="AGE" style="font-weight: 500;">22</td>
                                 <td data-label="DATE JOINED" style="font-weight: 500;">10-22-2023</td>
@@ -164,6 +183,7 @@
                     </table>
                 </section>
             </div>
+        </form>
         </section>
 
         <footer>

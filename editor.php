@@ -19,7 +19,10 @@ if(isset($_POST['apply'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="../imported/vendors/styles/style.css" />
+=======
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
     <link rel="stylesheet" href="../css/style.css">
     <title>TAU - SSIMS</title>    
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/TAU logo.png"/>
@@ -44,7 +47,11 @@ if(isset($_POST['apply'])){
                             <a href="../about_us.php">About Us</a>
                         </li>
                         <li class="item">
+<<<<<<< HEAD
                             <a href="../contact_us.php">Contact Us</a>
+=======
+                            <a href="./contact_us.php">Contact Us</a>
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
                        </li>
                         <li class="item">
                             <a href="../sports.php">Sports</a>
@@ -73,7 +80,11 @@ if(isset($_POST['apply'])){
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
                             </div>
                             <div class="modal-middle">
+<<<<<<< HEAD
                                 <img src="assets/TAU logo.png" alt="hi">
+=======
+                                <img src="../assets/TAU logo.png" alt="hi">
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
                                 <h2><span class="blink">TAU SSIMS</span></h2>
                             </div>
                             <div class="modal-body">
@@ -102,7 +113,11 @@ if(isset($_POST['apply'])){
                                     </li>
                                 </ul>
                                 <ul>
+<<<<<<< HEAD
                                     <li >
+=======
+                                    <li>
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
                                         <a href="../sports.php">
                                             <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
@@ -131,6 +146,7 @@ if(isset($_POST['apply'])){
                 </div>
             </div>
         </header>
+<<<<<<< HEAD
     
         <section class="sports">
             <form method="post" class="apply" target="_blank">
@@ -187,15 +203,101 @@ if(isset($_POST['apply'])){
             </div>
         </section>
         
+=======
+
+        <section class="requests">
+            <div class="title pb-20">
+                <h2 class="h3 mb-0" style="font-weight: 800;">Meet the Members</h2>
+            </div>
+            <div class="table">
+                <section class="table__header">
+                    <a href="../application_form.php">Apply for Tryouts</a>
+                    <div class="searchbar">
+                        <span class="material-icons-outlined" id="search">search</span>
+                        <div class="input-group">
+                            <input type="search" placeholder="Search here" id="search" autocomplete="off">
+                        </div>
+                    </div>
+                </section>
+                <section class="table__body">
+                    <table class="mesa" id="myTable">
+                        <thead class="mesa-head">
+                            <tr>
+                                <th onclick="sortTable(0)"> PLAYER <span class="icon-arrow">&UpArrow;</span></th>
+                                <th onclick="sortTable(1)"> SEX <span class="icon-arrow">&UpArrow;</span></th>
+                                <th onclick="sortTable(2)"> AGE <span class="icon-arrow">&UpArrow;</span></th>
+                                <th onclick="sortTable(3)"> DATE JOINED <span class="icon-arrow">&UpArrow;</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="PLAYER" style="font-weight: 500;">
+                                    <a href="#" id="openModal">Greenhills Peligro</a>
+                                </td>
+                                <td data-label="SEX" style="font-weight: 500;">Female</td>
+                                <td data-label="AGE" style="font-weight: 500;">22</td>
+                                <td data-label="DATE JOINED" style="font-weight: 500;">10-22-2023</td>
+                            </tr>
+                            <tr>
+                                <td data-label="PLAYER" style="font-weight: 500;">Acmad Cali</td>
+                                <td data-label="SEX" style="font-weight: 500;">Male</td>
+                                <td data-label="AGE" style="font-weight: 500;">36</td>
+                                <td data-label="DATE JOINED" style="font-weight: 500;">10-23-2023</td>
+                            </tr>
+                            <tr>
+                                <td data-label="PLAYER" style="font-weight: 500;">Eugene Valeriano</td>
+                                <td data-label="SEX" style="font-weight: 500;">Male</td>
+                                <td data-label="AGE" style="font-weight: 500;">35</td>
+                                <td data-label="DATE JOINED" style="font-weight: 500;">10-24-2023</td>
+                            </tr>
+                        </tbody>     
+                    </table>
+                    <!-- <div class="modal fade" id="view-player" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
+                                </div>
+                                <div class="modal-body">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                        CANCEL
+                                    </button>
+                                    <button name="add_new" type="submit" class="btn btn-primary">
+                                        CREATE
+                                    </button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div> -->
+                    <div id="myModal" class="nxtmodal">
+                        <div class="modalcontent">
+                            <span class="close" id="closeModal">&times;</span>
+                            <p>Modal content goes here.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
         <footer>
             <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGMENT SYSTEM</p>
         </footer>
     </div>
     
+<<<<<<< HEAD
     <script src="../imported/vendors/scripts/core.js"></script>
     <script src="../imported/vendors/scripts/script.min.js"></script>
     <script src="../imported/vendors/scripts/process.js"></script>
     <script src="../imported/vendors/scripts/layout-settings.js"></script>
+=======
+    <script src="../js/sorter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+>>>>>>> d0653de5b5fdf207ed0a4b8b787411f7dd7ae9a7
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
