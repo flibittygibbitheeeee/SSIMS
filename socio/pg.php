@@ -1,18 +1,3 @@
-<?php 
-
-session_start();
-include '../db.php';
-
-
-if(isset($_POST['apply'])){
-
-	$cat = 'Athletics';
-	
-	header("location: ../Try-outs/Verification.php"); $_SESSION["User"] = $cat;
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,46 +119,51 @@ if(isset($_POST['apply'])){
     
         <section class="sports">
             <form method="post" class="apply" target="_blank">
-                <button type="submit" id="add" name="apply">Apply for Tryouts</button>
+                <button type="submit" id="add" name="apply">Apply for an Audition</button>
             </form>
 
             <div class="card-box pd-20 height-100-p mb-30 align-items-center" style="width: 100%;">
 				<div class="row" style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                    <div class="col-sm-12 col-lg-4" style="padding: 30px;">
+						<img src="../assets/couple-dance.png" alt="" />
+					</div>
 					<div class="col-sm-12 col-lg-8">
 						<h4 class="font-20 weight-500 mb-10 text-capitalize">
-							<div class="weight-600 font-30" style="color: #024e02;">What is Athletics?</div>
+							<div class="weight-600 font-30" style="color: #2c772c;">The History of Dance</div>
 						</h4>
-						<p class="font-18">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
-							hic non repellendus debitis iure, doloremque assumenda. Autem
-							modi, corrupti, nobis ea iure fugiat, veniam non quaerat
-							mollitia animi error corporis.
-						</p>
-					</div>
-					<div class="col-sm-12 col-lg-4">
-						<img src="../imported/vendors/images/banner-img.png" alt="" />
+						<p class="font-16">
+                            <span>Dance</span> is something humans have been doing for a very <span>long time</span>. It has been used for <span>spiritual rites</span> and 
+                            to <span>unite communities</span>. Over the years, the way people dance has <span>changed</span>, but the idea of <span>moving your body</span> 
+                            to music and <span>expressing emotions</span> hasn't. You can dance in a <span>structured</span> way, like a <span class="italic">performance</span>, 
+                            or <span class="italic">just for fun</span>, to<span class="italic">release energy</span>, <span class="italic">connect with others</span>, or <span class="italic">enjoy moving</span>.
+                        </p>
+                        <p class="font-16">
+                            Dancing has existed since <span>prehistoric</span> times. We can see evidence of it in <span>old cave paintings</span> from <span>India</span> around <span>8000 BCE</span> and in 
+                            <span>paintings</span> in <span>Egyptian tombs</span> around <span>3300 BCE</span>. Early dances might have had <span>religious</span> purposes, but later on, the <span>Greeks</span> used 
+                            dance to celebrate their <span>gods</span> and at their <span>Olympic Games</span>. Apart from <span>impressing others</span>, they danced for <span>enjoyment</span>.                        
+                        </p>
+                        <p class="font-16">
+                            <span>Dancing</span> is a <span>part</span> of every <span>culture</span>, and people of all ages—from <span>pros</span> to <span>laypeople</span>—love dancing.                        
+                        </p>				
 					</div>
 				</div>
 			</div>
             
+            <div class="title pb-20 pt-20">
+                <h2 class="h3 mb-0">The Members</h2>
+            </div>
+            
             <div class="row clearfix">
-                <!-- ATHLETICS -->
-                
-                <?php 
-                
-                $hos = $mysqli->query("SELECT u.*, s.* FROM Users as u INNER JOIN Student as s ON u.User_Id = s.User_Id WHERE Department = 'Athletics'") or die($mysqli->error);
-                
-                ?>
-                <?php while ($row = $hos->fetch_assoc()): ?> 
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <!-- ARNIS -->                
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
-                            <h2><?php echo $row['First_Name']; ?> <?php echo $row['Middle_Name']; ?> <?php echo $row['Last_Name']; ?></h2>
+                            <h2>Member 1</h2>
                         </div>
-                        <img class="card-img-top" src="../uploads/<?php echo $row['file'] ?>" alt="Card image cap" style="border-radius: 0; height: 200px;"/>
+                        <img class="card-img-top" src="../imported/vendors/images/img4.jpg" alt="Card image cap" style="border-radius: 0; height: 200px; width: auto;"/>
                         <div class="card-body">
 							<h5 class="card-title weight-500">Track and Field</h5>
-							<p class="card-text">
+							<p class="card-text"style="color: #6C757D;" >
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque hic harum modi omnis est. Quos accusantium beatae dignissimos quae modi.
 							</p>
 							<p class="card-text">
@@ -182,13 +172,31 @@ if(isset($_POST['apply'])){
 						</div>
                     </div>
                 </div> 
-                <?php endwhile; ?>	
-                 
+            </div>
+            
+            			
+            <div class="title pb-20 pt-20">
+                <h2 class="h3 mb-0">The Trainers</h2>
+            </div>
+            <div class="row" style="width: 100%; margin: auto 0;">
+                <div class="col-md-4 mb-20">
+                    <a href="#" class="card-box d-block mx-auto pd-20 text-secondary">
+                        <div class="img pb-30">
+                            <img src="../imported/vendors/images/medicine-bro.svg" alt="" />
+                        </div>
+                        <div class="content">
+                            <h3 class="h4">First Trainer</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, id!
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         
         <footer>
-            <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGMENT SYSTEM</p>
+            <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGEMENT SYSTEM</p>
         </footer>
     </div>
     

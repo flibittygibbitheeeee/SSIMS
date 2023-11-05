@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,13 +117,13 @@
             </div>
         </header>
     
-        <section class="sports">
+        <div class="sports">
             <div class="title pb-20">
                 <h2 class="h3 mb-0" style="font-weight: 800;">Choose Your Sport</h2>
             </div>
             <div class="row clearfix">
                 <!-- ATHLETICS -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Athletics</h2>
@@ -138,35 +137,35 @@
                 <!-- ATHLETICS -->
 
                 <!-- ARNIS -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Arnis</h2>
                         </div>
                         <img class="card-img-top" src="imported/vendors/images/img5.jpg" alt="Card image cap" style="border-radius: 0;"/>
                         <div class="card-body">
-                            <a href="arnis.php" class="btn btn-primary">Take me there</a>
+                            <a href="sports/arnis.php" class="btn btn-primary">Take me there</a>
                         </div>
                     </div>
                 </div> 
                 <!-- ARNIS -->
 
                 <!-- ARCHERY -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Archery</h2>
                         </div>
                         <img class="card-img-top" src="imported/vendors/images/img5.jpg" alt="Card image cap" style="border-radius: 0;"/>
                         <div class="card-body">
-                            <a href="archery.php" class="btn btn-primary">Take me there</a>
+                            <a href="sports/archery.php" class="btn btn-primary">Take me there</a>
                         </div>
                     </div>
                 </div> 
                 <!-- ARCHERY -->
 
                 <!-- BADMINTON -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Badminton</h2>
@@ -181,7 +180,7 @@
             </div>
             <div class="row clearfix">
                 <!-- BASEBALL -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Baseball</h2>
@@ -195,7 +194,7 @@
                 <!-- BASEBALL -->
 
                 <!-- BASKETBALL -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Basketball</h2>
@@ -209,7 +208,7 @@
                 <!-- BASKETBALL -->
 
                 <!-- BEACH VOLLEYBALL -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Beach Volleyball</h2>
@@ -223,7 +222,7 @@
                 <!-- BEACH VOLLEYBALL -->
                 
                 <!-- BOXING -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Boxing</h2>
@@ -238,7 +237,7 @@
             </div>
             <div class="row clearfix">
                 <!-- CHESS -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Chess</h2>
@@ -252,7 +251,7 @@
                 <!-- CHESS -->
 
                 <!-- DANCESPORTS -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Dancesports</h2>
@@ -266,7 +265,7 @@
                 <!-- DANCESPORTS -->
 
                 <!-- FOOTBALL -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Football</h2>
@@ -280,7 +279,7 @@
                 <!-- FOOTBALL -->
                 
                 <!-- FUTSAL -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Futsal</h2>
@@ -295,7 +294,7 @@
             </div>
             <div class="row clearfix">
                 <!-- KARATE-DO -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Karate-do</h2>
@@ -309,7 +308,7 @@
                 <!-- KARATE-DO -->
 
                 <!-- LAWN TENNIS -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Lawn Tennis</h2>
@@ -323,7 +322,7 @@
                 <!-- LAWN TENNIS -->
 
                 <!-- PENCAKSILAT -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Pencaksilat</h2>
@@ -337,7 +336,7 @@
                 <!-- PENCAKSILAT -->
                 
                 <!-- SEPAK TAKRAW -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Sepak Takraw</h2>
@@ -352,7 +351,7 @@
             </div>
             <div class="row clearfix">
                 <!-- SOFTBALL -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Softball</h2>
@@ -366,7 +365,7 @@
                 <!-- SOFTBALL -->
 
                 <!-- SWIMMING -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Swimming</h2>
@@ -380,7 +379,7 @@
                 <!-- SWIMMING -->
 
                 <!-- TABLE TENNIS -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Table Tennis</h2>
@@ -394,7 +393,7 @@
                 <!-- TABLE TENNIS -->
                 
                 <!-- TAEKWONDO -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Taekwondo</h2>
@@ -409,7 +408,7 @@
             </div>
             <div class="row clearfix">
                 <!-- VOLLEYBALL -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Volleyball</h2>
@@ -423,7 +422,7 @@
                 <!-- VOLLEYBALL -->
 
                 <!-- BILLIARD -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Billiard</h2>
@@ -437,7 +436,7 @@
                 <!-- BILLIARD -->
 
                 <!-- OTHERS -->
-                <div class="col-sm-12 col-md-6 col-lg-3 mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-3 mb-30">
                     <div class="card card-box">
                         <div class="card-body">
                             <h2>Others</h2>
@@ -450,10 +449,10 @@
                 </div> 
                 <!-- OTHERS -->
             </div>
-        </section>
+        </div>
         
         <footer>
-            <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGMENT SYSTEM</p>
+            <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGEMENT SYSTEM</p>
         </footer>
     </div>
     

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +26,7 @@
                         <li class="item">
                             <a href="index.php">Home</a>
                         </li>
-                        <li class="item" style="background-color: #031E23; color: white;">
+                        <li class="item">
                             <a href="about_us.php">About Us</a>
                         </li>
                         <li class="item">
@@ -34,7 +35,7 @@
                         <li class="item">
                             <a href="sports.php">Sports</a>
                         </li>
-                        <li class="item">
+                        <li class="item" style="background-color: #031E23; color: white;">
                             <a href="socio.php">Sociocultural</a>
                         </li>
                         <li class="item" id="loginItem">
@@ -71,7 +72,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li style="background-color: #031E23; color: white;">
+                                    <li>
                                         <a href="about_us.php">
                                             <span class="material-icons-outlined" id="icon">people</span>
                                             <span class="name">ABOUT US</span>
@@ -95,7 +96,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li>
+                                    <li style="background-color: #031E23; color: white;">
                                         <a href="socio.php">
                                             <span class="material-icons-outlined" id="icon">music_note</span>
                                             <span class="name">SOCIOCULTURAL</span>
@@ -116,104 +117,65 @@
                 </div>
             </div>
         </header>
-
-        <section class="about">
-            <div class="aboutUpperLeft">
-                <div class="inUl">
-                    <h1>About Us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse earum nobis autem vel 
-                        inventore ea illum repellat dolorum aliquid nostrum aspernatur provident optio ut magnam 
-                        nesciunt dolore eveniet quia asperiores, reiciendis nisi ipsum culpa. Quia aliquid, eligendi 
-                        similique non nobis rem cum illo in repellat voluptatibus asperiores! Odio, tempora.</p>
-                </div>
-            </div>
-            <div class="aboutUpperRight">
-                <img src="./assets/first.png" class="desktop">
-                <img src="./assets/first.jpg" class="mobile">
-            </div>
-        </section>
-
-        <section class="team">
+    
+        <section class="socio">
             <div class="title pb-20">
-                <h2 class="mb-0" style="font-weight: 800;">The Team</h2>
+                <h2 class="h3 mb-0" style="font-weight: 800;">What's your talent?</h2>
             </div>
-            <div class="row">
-                <div class="col-md-4 mb-20">
-                    <a class="card-box d-block mx-auto pd-20 text-secondary">
-                        <div class="img pb-30">
-                            <img src="assets/man2.avif" alt="" />
+            <div class="row clearfix" class="background: red">
+                <!-- BAND -->
+                <div class="col-sm-12 col-md-12 col-lg-4 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h2>Band</h2>
                         </div>
-                        <div class="content">
-                            <h3 class="h4">Jan Patrick Felipe Mauricio</h3>
-                            <p>FRONTEND DEVELOPER</p>
+                        <img class="card-img-top" src="assets/band.jpg" alt="Combo Maxx" style="border-radius: 0; height: 350px;"/>
+                        <div class="card-body">
+                            <a href="socio/band.php" class="btn btn-primary">Take me there</a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-4 mb-20">
-                    <a class="card-box d-block mx-auto pd-20 text-secondary">
-                        <div class="img pb-30">
-                        <img src="assets/man3.avif" alt="" />
+                    </div>
+                </div> 
+                <!-- BAND -->
+
+                <!-- CHORALE -->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h2>Chorale</h2>
                         </div>
-                        <div class="content">
-                            <h3 class="h4">Julian Naval Consul III</h3>
-                            <p>PROJECT MANAGER</p>
+                        <img class="card-img-top" src="assets/tauc-wacky.jpg" alt="TAUC" style="border-radius: 0; height: 350px;"/>
+                        <div class="card-body">
+                            <a href="socio/tauc.php" class="btn btn-primary">Take me there</a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-4 mb-20">
-                    <a class="card-box d-block mx-auto pd-20 text-secondary">
-                        <div class="img pb-30">
-                            <img src="assets/man4.avif" alt="" />
+                    </div>
+                </div> 
+                <!-- CHORALE -->
+
+                <!-- PG -->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h2>PG</h2>
                         </div>
-                        <div class="content">
-                            <h3 class="h4">Alain Dumpit Pandez</h3>
-                            <p>BACKEND DEVELOPER</p>
+                        <img class="card-img-top" src="assets/pg.jpg" alt="Performing Guild" style="border-radius: 0; height: 350px;"/>
+                        <div class="card-body">
+                            <a href="socio/pg.php" class="btn btn-primary">Take me there</a>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </div> 
+                <!-- PG -->
             </div>
         </section>
-
-        <section class="values">
-            <div class="card-box pd-20 height-100-p mb-30 align-items-center" style="width: 100%;">
-				<div class="row" style="display: flex; align-items: center; justify-content: space-between; justify-content: center; width: 100%;">
-                    <div class="col-sm-12 col-lg-4" style="display: flex; align-items: center; justify-content: center; margin: 0 auto;">
-                        <img src="./assets/values2.png" class="desktop">
-                        <img src="./assets/values.png" class="mobile">
-					</div>
-					<div class="col-sm-12 col-lg-8" style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; padding: 40px;">
-                        <ul>
-                            <li>
-                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Error architecto mollitia reprehenderit vero voluptatum 
-                                    dolor! Libero incidunt alias esse culpa?</p>
-                            </li>
-                            <li>
-                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Error architecto mollitia reprehenderit vero voluptatum 
-                                    dolor! Libero incidunt alias esse culpa?</p>
-                            </li>
-                            <li>
-                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Error architecto mollitia reprehenderit vero voluptatum 
-                                    dolor! Libero incidunt alias esse culpa?</p>
-                            </li>
-                            <li>
-                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Error architecto mollitia reprehenderit vero voluptatum 
-                                    dolor! Libero incidunt alias esse culpa?</p>
-                            </li>
-                        </ul>
-					</div>
-				</div>
-			</div>
-        </section>
-
+        
+        <footer>
+            <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGEMENT SYSTEM</p>
+        </footer>
+    </div>
+    
     <script src="imported/vendors/scripts/core.js"></script>
+    <script src="imported/vendors/scripts/script.min.js"></script>
+    <script src="imported/vendors/scripts/process.js"></script>
+    <script src="imported/vendors/scripts/layout-settings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

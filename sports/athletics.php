@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../imported/vendors/styles/style.css" />
     <link rel="stylesheet" href="../css/style.css">
     <title>TAU - SSIMS</title>    
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/TAU logo.png"/>
@@ -28,7 +29,7 @@
                             <a href="../about_us.php">About Us</a>
                         </li>
                         <li class="item">
-                            <a href="./contact_us.php">Contact Us</a>
+                            <a href="../contact_us.php">Contact Us</a>
                        </li>
                         <li class="item">
                             <a href="../sports.php">Sports</a>
@@ -57,7 +58,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="material-icons-outlined">close</span></button>
                             </div>
                             <div class="modal-middle">
-                                <img src="../assets/TAU logo.png" alt="hi">
+                                <img src="assets/TAU logo.png" alt="hi">
                                 <h2><span class="blink">TAU SSIMS</span></h2>
                             </div>
                             <div class="modal-body">
@@ -86,7 +87,7 @@
                                     </li>
                                 </ul>
                                 <ul>
-                                    <li>
+                                    <li >
                                         <a href="../sports.php">
                                             <span class="material-icons-outlined" id="icon">sports_tennis</span>
                                             <span class="name">SPORTS</span>
@@ -115,96 +116,113 @@
                 </div>
             </div>
         </header>
+    
+        <section class="sports">
+            <form method="post" class="apply" target="_blank">
+                <button type="submit" id="add" name="apply">Apply for Tryouts</button>
+            </form>
 
-        <section class="requests">
-            <div class="title pb-20">
-                <h2 class="h3 mb-0" style="font-weight: 800;">Meet the Members</h2>
+            <div class="card-box pd-20 height-100-p mb-30 align-items-center" style="width: 100%;">
+				<div class="row" style="display: flex; align-items: center; justify-content: center; width: 100%;">
+                    <div class="col-sm-12 col-lg-4">
+						<img src="../assets/hurdle.png" alt="" />
+					</div>
+					<div class="col-sm-12 col-lg-8">
+						<h4 class="font-20 weight-500 mb-10 text-capitalize">
+							<div class="weight-600 font-30" style="color: #024e02;">What is Athletics?</div>
+						</h4>
+						<p class="font-18">
+                            <span>Athletics</span>, a sport with ancient roots, has evolved throughout the years to provide a dynamic and life-enriching experience.</p>
+                        <p class="font-18">
+                            The crucial turning point happened on <span>July 17, 1912</span>, in Stockholm, Sweden, immediately following the Olympic Games' closing ceremony. 
+                            The <span>International Amateur Athletic Federation (IAAF)</span>, which would later become the global regulatory organization for the 
+                            sport of track and field athletics, was founded by representatives from <span>17</span> country athletics federations.
+                        </p>
+                        <p class="font-18">
+                            Athletics saw several modifications during the course of the following century, reflecting greater societal and political changes. 
+                            Notably, the name of the governing body itself changed throughout time, changing from the "<span>International Association of Athletics 
+                            Federations</span>" in <span>2001</span> to the "<span>World Athletics</span>" in <span>2019</span>, better reflecting the professional athletic world that has arisen since 1912.
+                        </p>
+					</div>
+				</div>
+			</div>
+            
+            <div class="title pb-20 pt-20">
+                <h2 class="h3 mb-0">The Members</h2>
             </div>
-            <div class="table">
-                <section class="table__header">
-                    <a href="../application_form.php">Apply for Tryouts</a>
-                    <div class="searchbar">
-                        <span class="material-icons-outlined" id="search">search</span>
-                        <div class="input-group">
-                            <input type="search" placeholder="Search here">
+            
+            <div class="row clearfix">
+                <!-- ATHLETICS -->
+                                
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h2>Axiel Season Three</h2>
                         </div>
+                        <img class="card-img-top" src="../uploads/34928-axie-full-transparent.png" alt="Card image cap" style="border-radius: 0; height: 200px; width: auto;"/>
+                        <div class="card-body">
+							<h5 class="card-title weight-500">Track and Field</h5>
+							<p class="card-text"style="color: #6C757D;" >
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque hic harum modi omnis est. Quos accusantium beatae dignissimos quae modi.
+							</p>
+							<p class="card-text">
+								<small class="text-muted">Active since 2019</small>
+							</p>
+						</div>
                     </div>
-                </section>
-                <section class="table__body">
-                    <table class="mesa" id="myTable">
-                        <thead class="mesa-head">
-                            <tr>
-                                <th onclick="sortTable(0)"> PLAYER <span class="icon-arrow">&UpArrow;</span></th>
-                                <th onclick="sortTable(1)"> SEX <span class="icon-arrow">&UpArrow;</span></th>
-                                <th onclick="sortTable(2)"> AGE <span class="icon-arrow">&UpArrow;</span></th>
-                                <th onclick="sortTable(3)"> DATE JOINED <span class="icon-arrow">&UpArrow;</span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="PLAYER" style="font-weight: 500;">
-                                    <a href="#" data-toggle="modal" data-target="#Medium-modal1" btype="button">Greenhills Peligro</a>
-                                </td>
-                                <td data-label="SEX" style="font-weight: 500;">Female</td>
-                                <td data-label="AGE" style="font-weight: 500;">22</td>
-                                <td data-label="DATE JOINED" style="font-weight: 500;">10-22-2023</td>
-                            </tr>
-                            <tr>
-                                <td data-label="PLAYER" style="font-weight: 500;">Acmad Cali</td>
-                                <td data-label="SEX" style="font-weight: 500;">Male</td>
-                                <td data-label="AGE" style="font-weight: 500;">36</td>
-                                <td data-label="DATE JOINED" style="font-weight: 500;">10-23-2023</td>
-                            </tr>
-                            <tr>
-                                <td data-label="PLAYER" style="font-weight: 500;">Eugene Valeriano</td>
-                                <td data-label="SEX" style="font-weight: 500;">Male</td>
-                                <td data-label="AGE" style="font-weight: 500;">35</td>
-                                <td data-label="DATE JOINED" style="font-weight: 500;">10-24-2023</td>
-                            </tr>
-                        </tbody>     
-                    </table>
-                </section>
+                </div> 
+                 
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-30">
+                    <div class="card card-box">
+                        <div class="card-body">
+                            <h2>Juan Santos Dela Cruz</h2>
+                        </div>
+                        <img class="card-img-top" src="../uploads/51426-tom.jpg" alt="Card image cap" style="border-radius: 0; height: 200px; width: auto;"/>
+                        <div class="card-body">
+							<h5 class="card-title weight-500">Track and Field</h5>
+							<p class="card-text"style="color: #6C757D;" >
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque hic harum modi omnis est. Quos accusantium beatae dignissimos quae modi.
+							</p>
+							<p class="card-text">
+								<small class="text-muted">Active since 2019</small>
+							</p>
+						</div>
+                    </div>
+                </div> 
+                	
+                 
+            </div>
+            
+            			
+            <div class="title pb-20 pt-20">
+                <h2 class="h3 mb-0">The Trainers</h2>
+            </div>
+            <div class="row" style="width: 100%; margin: auto 0;">
+                <div class="col-md-4 mb-20">
+                    <a href="#" class="card-box d-block mx-auto pd-20 text-secondary">
+                        <div class="img pb-30">
+                            <img src="../imported/vendors/images/medicine-bro.svg" alt="" />
+                        </div>
+                        <div class="content">
+                            <h3 class="h4">First Trainer</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, id!
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
-
+        
         <footer>
             <p> &copy; TARLAC AGRICULTURAL UNIVERSITY - SPORTS AND SOCIOCULTURAL INFORMATION MANAGMENT SYSTEM</p>
         </footer>
     </div>
-        							
-    <div class="modal fade" id="Medium-modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myLargeModalLabel1">
-                        Add new trainer
-                    </h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input class="form-control" type="text" name="email"/>
-                    </div>
-                    <div class="form-group">
-                        <label>Department</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        CANCEL
-                    </button>
-                    <button name="add_new" type="submit" class="btn btn-primary">
-                        CREATE
-                    </button>
-                </div>
-            </div>
-        
-        </div>
-    </div>
     
-    <script src="../js/sorter.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../imported/vendors/scripts/core.js"></script>
+    <script src="../imported/vendors/scripts/script.min.js"></script>
+    <script src="../imported/vendors/scripts/process.js"></script>
+    <script src="../imported/vendors/scripts/layout-settings.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

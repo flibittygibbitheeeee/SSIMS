@@ -691,6 +691,25 @@ form {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
 }
 
+.socio{
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.socio .card-body a {
+  transition: .3s ease-in-out;
+}
+
+.socio .card-body a:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
 .fullArtupper{
   width: 55vw;
 }
@@ -878,7 +897,11 @@ form {
 footer{
   text-align: center;
   width: 100vw;
-  padding: 25px;
+  padding: 20px;
+}
+
+footer p{
+  font-weight: 600;
 }
 
 .about{
@@ -889,14 +912,14 @@ footer{
 
 .aboutUpperLeft{
   width: 60vw;
-  padding: 20px;
+  padding: 20px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .aboutUpperLeft h1{
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -919,41 +942,25 @@ footer{
   border-radius: 5px;
 }
 
-.aboutUpperRight .mobile{
+.mobile{
   display: none;
 }
 
 .values{
   width: 100vw;
-  padding: 40px;
-  text-align: right;
-}
-
-.values .inVal{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  padding: 20px;
 }
 
 .values h1{
   margin-bottom: 20px;
 }
 
-.values .inVal img{
-  width: 40vw;
-}
-
-.values ul{
-  width: 60vw;
-}
-
-.values ul li{
-  margin-top: 10px;
-}
-
 .values ul li p{
-  line-height: 3rem;
+  line-height: 2rem;
+}
+
+.values img{
+  margin: 0;
 }
 
 .requests{
@@ -1169,7 +1176,55 @@ tbody td.active {
   background: whitesmoke;
 }
 
-.blink{
+.apply{
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.apply button{
+  background-color: #024e02;
+  color: white;
+  border-radius: var(--border-radius-1);
+  padding: 10px 20px;
+  font-size: 14px;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sports p span{
+  color: #2c772c;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.sports p .italic{
+  font-style: italic;
+}
+
+.socio p span{
+  color: #2c772c;  
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.socio p .italic{
+  font-style: italic;
+}
+
+.team{
+  width: 100vw;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.team h2{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* .blink{
   position: relative;
   animation: animate 5s linear infinite;
 }
@@ -1188,7 +1243,7 @@ tbody td.active {
       0 0 160px #024e02,
       0 0 400px #024e02;
   }
-}
+} */
 
 @media (max-width: 1200px){
   .box{
@@ -1255,9 +1310,18 @@ tbody td.active {
   }
 
   .about{
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+
+  .about h1{
+    font-size: 28px;
+  }
+
+  .about p{
+    font-size: 16px;
   }
 
   .aboutUpperLeft{
@@ -1268,11 +1332,11 @@ tbody td.active {
     width: 100vw;
   }
 
-  .aboutUpperRight .desktop{
+  .desktop{
     display: none;
   }
 
-  .aboutUpperRight .mobile{
+  .mobile{
     display: block;
   }
 
@@ -1281,24 +1345,8 @@ tbody td.active {
     width: auto;
   }
 
-  .values{
-    text-align: center;
-  }
-
-  .values .inVal{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .values .inVal img{
-    width: 100vw;
-  }
-  
   .values ul{
-    width: 100vw;
-    padding: 20px;
+    text-align: center;
   }
 
   .values ul li p{
@@ -1395,15 +1443,6 @@ tbody td.active {
       width: fit-content;
       margin: auto;
   }
-
-  /* .values ul{
-    width: 100vw;
-    padding: 20px;
-  }
-
-  .values ul li p{
-    line-height: 2rem;
-  } */
 }
 
 @media (max-width: 850px) {
@@ -1449,6 +1488,10 @@ tbody td.active {
   }
 
   .sports{
+    padding: 20px;
+  }
+
+  .socio{
     padding: 20px;
   }
 
