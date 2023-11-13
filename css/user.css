@@ -46,6 +46,10 @@ body {
     padding: 6px 12px;
 }
 
+.form-control p{
+    margin: 5px;
+}
+
 .form-group .pass span{
     display: flex;
     align-items: center;
